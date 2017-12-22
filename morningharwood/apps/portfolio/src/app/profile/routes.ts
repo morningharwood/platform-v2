@@ -1,6 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
-import { MasterContainerComponent } from 'apps/portfolio/src/app/profile/containers/master/component';
+import { MasterProfileContainerComponent } from './containers/master/component';
 import { ResumeContainerComponent } from './containers/resume/component';
 
 export const config: Routes = [
@@ -9,7 +9,7 @@ export const config: Routes = [
     children: [
       {
         path: '',
-        component: MasterContainerComponent,
+        component: MasterProfileContainerComponent,
       },
       {
         path: 'resume',

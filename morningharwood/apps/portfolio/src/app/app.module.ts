@@ -13,6 +13,9 @@ import { environment } from '../environments/environment';
 import { RouterStateSerializer, StoreRouterConnectingModule } from '@ngrx/router-store';
 import { CustomSerializer, reducers } from './router/state';
 import { RouterEffects } from './router/effects';
+import {MenuModule} from "./menu/module";
+import {WorkModule} from "./work/module";
+import {LabModule} from "./lab/module";
 
 @NgModule({
   imports: [
@@ -20,6 +23,9 @@ import { RouterEffects } from './router/effects';
     NxModule.forRoot(),
     RouterModule.forRoot(routes),
     ProfileModule,
+    MenuModule,
+    LabModule,
+    WorkModule,
     StoreModule.forRoot(reducers),
     EffectsModule.forRoot([RouterEffects]),
     !environment.production ? StoreDevtoolsModule.instrument() : [],

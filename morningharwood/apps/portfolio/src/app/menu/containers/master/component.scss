@@ -1,0 +1,35 @@
+@import '../../../../assets/css/_mixins';
+@import '../../../../assets/css/_variables';
+
+$text: $default-text;
+$text-size: 36 * 1px;
+$hover: $red-mh;
+
+:host {
+  align-items: flex-end;
+  bottom: 0;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+
+  @include bp(4) {
+    display: flex;
+    height: 100%;
+    max-width: 100%;
+    padding: 0 0 $default-bleed 0;
+  }
+}
+
+.full-bleed-fixed {
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
