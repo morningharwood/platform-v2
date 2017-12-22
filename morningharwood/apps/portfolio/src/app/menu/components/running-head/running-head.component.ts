@@ -9,11 +9,10 @@ import { Observable } from 'rxjs/Observable';
 
 
 @Component({
-  selector: 'running-head',
+  selector: 'mh-running-head',
   templateUrl: 'running-head.component.html',
   styleUrls: [
     'running-head.component.scss',
-    '../../../components/sundial/sundial-links.scss',
   ],
 
   changeDetection: ChangeDetectionStrategy.OnPush,

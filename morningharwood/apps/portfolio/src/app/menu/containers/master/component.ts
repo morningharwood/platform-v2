@@ -1,14 +1,27 @@
-import {Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Store} from '@ngrx/store';
 import * as RouterActions from '../../../router/actions';
+import { bogo } from '../../../_handies/sorting';
+import {
+  initalState, Item,
+  RunningHeader,
+} from '../../components/running-head/running-head.content';
+import { Observable } from 'rxjs/Observable';
+import { pulseData$ } from '../../../_handies/pulse-obs';
 
 @Component({
   selector: 'mh-master-menu',
   templateUrl: './component.html',
-  styleUrls: ['./component.scss']
+  styleUrls: ['./component.scss'],
 })
-export class MasterMenuContainerComponent {
+export class MasterMenuContainerComponent implements OnInit {
+  private state_: RunningHeader;
+  public state$: Observable<Item>;
   constructor(private store: Store<any>) {
+  }
+  public ngOnInit() {
+    this.state_ = bogo(initalState);
+    this.state$ = pulseData$(this.state_, 'name');
   }
 
   public go(path) {

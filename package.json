@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@types/gl-matrix": "2.4.0"
+  }
+}
