@@ -1,20 +1,20 @@
-@import '../../../../assets/css/_mixins';
-@import '../../../../assets/css/_variables';
+@import '../../../../assets/css/mixins';
+@import '../../../../assets/css/variables';
 
 :host {
+  bottom: 114px;
   display: flex;
   margin: 0 0 0 auto;
   max-width: 448px;
-  width: 100%;
   position: absolute;
-  bottom: 114px;
   right: 0;
+  width: 100%;
   z-index: 1;
 }
 
 nav {
+  padding: 0 0 $size-42 $size-42;
   width: 100%;
-  padding: 0 0 42px 42px;
 
   @include bp(4) {
     padding-bottom: 0;

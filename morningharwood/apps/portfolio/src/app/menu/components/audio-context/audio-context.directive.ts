@@ -7,6 +7,7 @@ import {
   PLATFORM_ID,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { EventType } from '@morningharwood/event-types/apps/portfolio/src/event-type.enum';
 
 
 @Directive({
@@ -18,7 +19,7 @@ export class AudioContextDirective implements OnInit, OnDestroy {
   private context: AudioContext | any;
   private volume: any;
 
-  @Input() protected frequency: number;
+  @Input() public frequency: number;
 
   constructor(@Inject(PLATFORM_ID) platformId: string) {
     this.platformId = platformId;
@@ -35,7 +36,7 @@ export class AudioContextDirective implements OnInit, OnDestroy {
     this.context.close();
   }
 
-  @HostListener('mouseenter')
+  @HostListener(EventType.MOUSEENTER)
   public openOsc(): void {
     if (!isPlatformBrowser(this.platformId)) {
       return;
@@ -51,7 +52,7 @@ export class AudioContextDirective implements OnInit, OnDestroy {
     this.osc.start();
   }
 
-  @HostListener('mouseleave')
+  @HostListener(EventType.MOUSELEAVE)
   public closeOsc(): void {
     if (!isPlatformBrowser(this.platformId)) {
       return;
@@ -59,7 +60,7 @@ export class AudioContextDirective implements OnInit, OnDestroy {
 
     this.volume.gain.value = 0;
 
-    setTimeout(()=> {
+    setTimeout(() => {
       this.volume.disconnect(this.context.destination);
       this.volume = null;
 

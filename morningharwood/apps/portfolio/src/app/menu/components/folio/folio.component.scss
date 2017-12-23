@@ -1,51 +1,53 @@
-@import '../../../../assets/css/_mixins.scss';
-@import '../../../../assets/css/_variables.scss';
+@import '../../../../assets/css/mixins';
+@import '../../../../assets/css/variables';
 
-$red-folio: $red-mh;
+
 
 :host {
-  left: 28px;
+  left: ms(1);
   position: fixed;
-  top: 16px;
+  top: ms(0);
   z-index: 1;
 
   @include bp(4) {
     bottom: 0;
-    left: 72px;
+    left: $size-72;
     top: auto;
     transform: rotate(-90deg);
     transform-origin: 0 0;
   }
 
   &::before {
-    background: $red-folio;
+    background: $red-mh;
     content: '';
-    height: 28px;
-    left: -22px;
+    height: ms(1);
+    left: -(ms(1));
     position: absolute;
-    width: 4px;
+    width: ms(-3);
   }
 }
 
-h6, p {
-  font-size: 10px;
+h6,
+p {
+  font-family: $sans-default-family;
+  font-size: ms(-1);
+  font-weight: 300;
+  color: $black-mh;
 }
 
 h6 {
-  color: $red-folio;
-}
-
-p {
-  font-family: $sans-default-family;
+  color: $red-mh;
 }
 
 a {
   text-decoration: none;
-  cursor: pointer;
 
   &:hover {
-    color: $red-folio;
-    font-style: italic;
-    border-bottom: dotted 1px $black-mh;
+    border-bottom: 1px dotted $black-mh;
+    color: $red-mh;
+  }
+
+  &:visited {
+    color: $black-mh;
   }
 }

@@ -69,6 +69,12 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
+    },
+    {
+      "name": "event-types",
+      "root": "libs/event-types/apps/portfolio/src",
+      "test": "../../../../../test.js",
+      "appRoot": ""
     }
   ]
 }

@@ -13,6 +13,7 @@ import {
   mat4,
   quat,
 } from 'gl-matrix-ts';
+import { EventType } from '@morningharwood/event-types/apps/portfolio/src/event-type.enum';
 
 
 @Directive({
@@ -340,7 +341,7 @@ export class BonerGlDirective implements OnInit {
     this._gl.bufferData(this._gl.ELEMENT_ARRAY_BUFFER, new Uint8Array(indices), this._gl.STATIC_DRAW);
   }
 
-  @HostListener('mousemove', ['$event'])
+  @HostListener(EventType.MOUSEMOVE, ['$event'])
   watchMouse($event: MouseEvent) {
     this.mouse.x = $event.screenX;
     this.mouse.y = $event.screenY;

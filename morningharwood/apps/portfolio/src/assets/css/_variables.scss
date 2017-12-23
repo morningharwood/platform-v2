@@ -10,7 +10,7 @@ $bold: 700;
 $default-bleed: 72 * 1px;
 $hi-number: 420 * 1px;
 $display-font-family: 'Times New Roman', Times, serif;
-$sans-default-family: 'Noto Sans', sans-serif;
+$sans-default-family: sans-serif;
 $blue-link: #0095dd;
 $white: #fff;
 $white-off: #f7f7f7;
@@ -19,7 +19,7 @@ $gray-off: #dedede;
 //sepia
 $sepia-bg: #f4ecd8;
 $sepia-copy: #5b4636;
-$sepia-link: $blue-link ;
+$sepia-link: $blue-link;
 
 
 //dark
@@ -37,10 +37,19 @@ $modularscale: (
   ratio: $golden,
   aug: (
     ratio: $major-third
+  ),
+  minor-second: (
+    ratio: $minor-second
   )
 );
 
-
+//$size-10: ms(-2, $thread: minor-second);
+$size-10: ms(-1);
+$size-12: ms(-1, $thread: minor-second);
+$size-19: ms(2, $thread: aug);
+$size-42: ms(2);
+$size-62: ms(3, $thread: aug);
+$size-72: ms(7, $thread: aug);
 
 // FONT SIZES
 $common-size-0: 16 * 1;

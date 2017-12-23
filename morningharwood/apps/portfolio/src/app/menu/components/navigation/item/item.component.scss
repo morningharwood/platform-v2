@@ -8,23 +8,22 @@ $index-offset: 4 * 1px;
 $i-font-size: 10 * 1px;
 
 :host {
-  overflow: hidden;
   display: block;
+  overflow: hidden;
 }
 
 a {
   color: $text;
   cursor: pointer;
-  font-feature-settings: "kern" 1, "liga" 1, "swsh" 1;
+  display: flex;
   font-size: $text-size;
   line-height: 1.6;
   position: relative;
   text-decoration: none;
-  display: flex;
 
   @include bp(4) {
+    font-size: $size-72;
     line-height: 1.4;
-    font-size: 82px;
   }
 
   &:hover {
@@ -32,11 +31,11 @@ a {
   }
 
   &::before {
-    position: absolute;
-    content: '';
-    bottom: 0;
     background: $text;
+    bottom: 0;
+    content: '';
     height: 1px;
+    position: absolute;
 
     @include bp(4) {
       height: 2px;
@@ -81,14 +80,16 @@ a {
       background: $sepia-copy;
     }
   }
+
+  font-feature-settings: "kern" 1, "liga" 1, "swsh" 1;
 }
 
 span {
   @include bp(4) {
-    padding: 0 $default-bleed 0 0;
-    position: relative;
     display: flex;
     justify-content: flex-end;
+    padding: 0 $default-bleed 0 0;
+    position: relative;
     width: 100%;
   }
 }
