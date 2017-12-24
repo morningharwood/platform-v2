@@ -1,5 +1,8 @@
 <!-- audioContext -->
-<a (click)="go(data.name)" mhAudioContext [frequency]="(100 - (index * 20))">
+<a (click)="go(data.name)"
+   mhAudioContext
+   [frequency]="(100 - (index * 20))">
   <span [@animate]="enterState">{{data.name | capitalize}}</span>
+  <!-- TODO(mharwood) Make this a pure pipe. -->
   <i>0{{index}}</i>
 </a>

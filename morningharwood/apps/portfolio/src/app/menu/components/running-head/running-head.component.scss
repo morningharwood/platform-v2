@@ -1,6 +1,12 @@
 @import '../../../../assets/css/mixins';
 @import '../../../../assets/css/variables';
 
+
+
+%dotted-border {
+  @include border(bottom, 1px, dotted, $default-text);
+}
+
 :host {
   @include position(fixed, ms(0), null, null, ms(0));
   @include size(auto, auto);
@@ -18,8 +24,8 @@
 }
 
 :host::before {
-  @include position(absolute, 6px, null, null, -(ms(0)));
-  @include size(3px, 55px);
+  @include position(absolute, -(ms(2)), null, null, -(ms(0)));
+  @include size(3px, ms(4));
 
   background-color: $red-mh;
   content: '';
@@ -43,11 +49,12 @@ a {
 }
 
 a:hover .scroll-through {
-  border-bottom: dotted 1px $default-text;
+  @extend %dotted-border;
 }
 
 .highlight-all:hover {
-  border-bottom: dotted 1px $default-text;
+  @extend %dotted-border;
+
   color: $red-mh;
 }
 
@@ -77,20 +84,19 @@ dt {
 
 dd {
   @include position(relative);
+  @include space(p, 0 0 0 ms(-1));
 
-  font-size: 11px;
+  font-size: ms(-3, $thread: minor-second);
   font-weight: 400;
   line-height: 2;
-  padding-left: 8px;
 
   @include bp(4) {
-    padding-left: 24px;
+    @include space(p, 0 0 0 ms(2));
   }
 }
 
 dd::before {
-  left: 0;
-  position: absolute;
+  @include position(absolute, null, null, null, 0);
 
   @include bp(4) {
     content: '\2014';
