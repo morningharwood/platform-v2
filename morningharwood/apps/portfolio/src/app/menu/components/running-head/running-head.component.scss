@@ -1,88 +1,73 @@
-@import '../../../../assets/css/_mixins.scss';
-@import '../../../../assets/css/_variables.scss';
-
-$text: $default-text;
-$hover: $red-mh;
+@import '../../../../assets/css/mixins';
+@import '../../../../assets/css/variables';
 
 :host {
+  @include position(fixed, ms(0), null, null, ms(0));
+  @include size(auto, auto);
+
   background-size: auto 50%;
-  display: block;
   font-family: $sans-default-family;
   font-size: 14px;
-  font-weight: 700;
-  height: auto;
-  left: 16px;
-  position: fixed;
-  top: 16px;
-  width: auto;
-  z-index: 4;
-
-  @include bp(1) {
-    left: 16px;
-  }
+  font-weight: $bold;
+  z-index: $layer-2;
 
   @include bp(4) {
-    left: 72px;
-    top: 72px;
+    left: ms(3);
+    top: ms(3);
   }
+}
 
-  &:before {
-    background-color: $red-mh;
-    content: '';
-    height: 55px;
-    left: -16px;
-    position: absolute;
-    top: 6px;
-    width: 3px;
+:host::before {
+  @include position(absolute, 6px, null, null, -(ms(0)));
+  @include size(3px, 55px);
 
-    @include bp(4) {
-      @include hide();
-    }
+  background-color: $red-mh;
+  content: '';
+
+  @include bp(4) {
+    @include hide();
   }
 }
 
 a {
-  cursor: pointer;
   text-decoration: none;
 
-  &:hover {
-    .scroll-through {
-      border-bottom: dotted 1px $text;
-      color: $hover;
-    }
-  }
-
   &:visited {
-    color: $text;
+    color: $default-text;
   }
+}
 
-  &.highlight-all:hover {
-    border-bottom: dotted 1px $text;
-    color: $hover;
+.scroll-through {
+  color: $red-mh;
+  font-weight: bold;
+}
 
-    &.digital-to-physical {
-      .digital {
-        display: none;
-        visibility: hidden;
-      }
+a:hover .scroll-through {
+  border-bottom: dotted 1px $default-text;
+}
 
-      .physical {
-        display: inline;
-        visibility: visible;
-      }
-    }
-  }
+.highlight-all:hover {
+  border-bottom: dotted 1px $default-text;
+  color: $red-mh;
 }
 
 .digital-to-physical {
   .digital {
-    display: inline;
-    visibility: visible;
+    @include show(inline);
   }
 
   .physical {
-    display: none;
-    visibility: hidden;
+    @include hide();
+  }
+}
+
+.highlight-all:hover.digital-to-physical {
+  .digital {
+    @include hide();
+  }
+
+  .physical {
+    @include show(inline);
   }
 }
 
@@ -91,28 +76,25 @@ dt {
 }
 
 dd {
+  @include position(relative);
+
   font-size: 11px;
   font-weight: 400;
   line-height: 2;
   padding-left: 8px;
-  position: relative;
 
   @include bp(4) {
     padding-left: 24px;
   }
+}
 
-  &::before {
-    left: 0;
-    position: absolute;
+dd::before {
+  left: 0;
+  position: absolute;
 
-    @include bp(4) {
-      content: '\2014';
-      top: 2px;
-    }
+  @include bp(4) {
+    content: '\2014';
+    top: 2px;
   }
 }
 
-.scroll-through {
-  color: $hover;
-  font-weight: bold;
-}
