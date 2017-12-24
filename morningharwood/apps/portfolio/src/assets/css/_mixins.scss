@@ -1,18 +1,51 @@
-@mixin bp($type){
+
+/**
+ *   body {
+ *     @include background-image('pattern');
+ *   }
+ */
+
+$image-path: '../img' !default;
+$fallback-extension: 'png' !default;
+$retina-suffix: '@2x';
+
+@mixin background-image($name, $size:false) {
+  background-image: url(#{$image-path}/#{$name}.svg);
+
+  @if ($size) {
+    background-size: $size;
+  }
+
+  .no-svg & {
+    background-image: url(#{$image-path}/#{$name}.#{$fallback-extension});
+
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+    }
+  }
+}
+
+@mixin bp($type) {
   @if $type == 1 {
-    @media #{"(min-width: 576px)"} { @content; }
-  }
-  @else if $type == 2 {
-    @media #{"(min-width: 768px)"} { @content; }
-  }
-  @else if $type == 3 {
-    @media #{"(min-width: 992px)"} { @content; }
-  }
-  @else if $type == 4 {
-    @media #{"(min-width: 1200px)"} { @content; }
-  }
-  @else if $type == 5 {
-    @media #{"(min-width: 1599px)"} { @content; }
+    @media #{"(min-width: 576px)"} {
+      @content;
+    }
+  } @else if $type == 2 {
+    @media #{"(min-width: 768px)"} {
+      @content;
+    }
+  } @else if $type == 3 {
+    @media #{"(min-width: 992px)"} {
+      @content;
+    }
+  } @else if $type == 4 {
+    @media #{"(min-width: 1200px)"} {
+      @content;
+    }
+  } @else if $type == 5 {
+    @media #{"(min-width: 1599px)"} {
+      @content;
+    }
   }
 
 }
@@ -22,7 +55,6 @@
   top: -9999px !important;
   left: -9999px !important;
 }
-
 
 @mixin hide() {
   display: none;
@@ -61,7 +93,7 @@
     }
 
     background-color: $local-bg;
-    color:  $local-copy;
+    color: $local-copy;
 
     a {
       color: $local-link

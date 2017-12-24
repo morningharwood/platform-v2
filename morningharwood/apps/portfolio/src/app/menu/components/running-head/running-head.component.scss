@@ -1,56 +1,41 @@
-@import '../../../../assets/css/_mixins.scss';
-@import '../../../../assets/css/_variables.scss';
-
-$text: $default-text;
-$hover: $red-mh;
+@import '../../../../assets/css/mixins';
+@import '../../../../assets/css/variables';
 
 :host {
-  font-family: $sans-default-family;
-  font-weight: 700;
-  font-size: 14px;
-  width: $common-size-4 + px;
-  height: 72px;
-  border-radius: 72px;
-  border: solid 1px darken($red-mh, 10%);
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  z-index: 1;
   background-size: auto 50%;
+  border: solid 1px darken($red-mh, 10%);
+  border-radius: ms(3);
+  bottom: ms(0);
+  font-family: $sans-default-family;
+  font-size: ms(-1);
+  font-weight: 700;
+  height: ms(3);
+  position: fixed;
+  right: ms(0);
+  width: ms(3);
+  z-index: 1;
 
   @include bp(4) {
-    border-radius: 0;
-    border: none;
-    width: 400px;
-    height: auto;
-    top: 72px;
-    left: 72px;
-    right: auto;
-    bottom: auto;
     background: none;
+    border: 0;
+    border-radius: 0;
+    bottom: auto;
+    height: auto;
+    left: ms(3);
+    right: auto;
+    top: ms(3);
+    width: 400px;
   }
+}
 
-  .running-head__container {
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -$default-bleed;
-      left: -($default-bleed*2);
-      width: $hi-number;
-      height: 1px;
-
-      .dark-filter & {
-        background-color: $dark-copy;
-      }
-
-      .light-filter & {
-        background-color: $light-copy;
-      }
-
-      .sepia-filter & {
-        background-color: $sepia-copy;
-      }
-    }
+.container {
+  &::after {
+    bottom: -(ms(3));
+    content: '';
+    height: 1px;
+    left: -(ms(6));
+    position: absolute;
+    width: $hi-number;
   }
 }
 
@@ -58,21 +43,19 @@ a {
   cursor: pointer;
   text-decoration: none;
 
-  &:hover {
-    .scroll-through {
-      border-bottom: dotted 1px $text;
-      color: $hover;
-    }
+  &:visited {
+    color: $default-text;
   }
+}
 
-  :visited {
-    color: $text;
-  }
+.highlight-all:hover {
+  border-bottom: dotted 1px $default-text;
+  color: $red-mh;
+}
 
-  &.highlight-all:hover {
-    color: $hover;
-    border-bottom: dotted 1px $text;
-  }
+a:hover .scroll-through {
+  border-bottom: dotted 1px $default-text;
+  color: $red-mh;
 }
 
 dt {
@@ -81,28 +64,26 @@ dt {
 
 dd {
   @include hide();
-  line-height: 2;
-  font-size: 11px;
+  font-size: ms(0);
   font-weight: 400;
   letter-spacing: .7px;
-  padding-left: 24px;
+  line-height: 2;
+  padding-left: ms(2);
   position: relative;
-
 
   @include bp(4) {
     @include show(block);
   }
 
   &::before {
-    position: absolute;
-    left: 0;
-    top: 2px;
     content: '\2014';
-
+    left: 0;
+    position: absolute;
+    top: 2px;
   }
 }
 
 .scroll-through {
-  color: $hover;
+  color: $red-mh;
   font-style: italic;
 }

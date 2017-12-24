@@ -19,4 +19,6 @@ import { Observable } from 'rxjs/Observable';
 })
 export class RunningHeadComponent {
   @Input() state: Observable<Item>;
+  public address = '1719 La Salle Ave, San Francisco, CA 94124';
+  public phoneNumber = '1-415-486-6018'
 }
