@@ -114,9 +114,37 @@ $retina-suffix: '@2x';
   top: $top;
 }
 
-@mixin size($width, $height: $width) {
-  height: $height;
-  width: $width;
+@mixin size(
+  $width: null,
+  $height: null,
+  $minWidth: null,
+  $minHeight: null,
+  $maxWidth: null,
+  $maxHeight: null) {
+
+  @if $height != null {
+    height: $height;
+  }
+
+  @if $maxHeight != null {
+    max-height: $maxHeight;
+  }
+
+  @if $maxWidth != null {
+    max-width: $maxWidth;
+  }
+
+  @if $minHeight != null {
+    min-height: $minHeight;
+  }
+
+  @if $minWidth != null {
+    min-width: $minWidth;
+  }
+
+  @if $width != null {
+    width: $width;
+  }
 }
 
 @mixin border($direction, $width, $style, $color) {

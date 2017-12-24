@@ -2,14 +2,12 @@
 @import '../../../../assets/css/variables';
 
 :host {
-  bottom: 9px;
+  @include position(absolute, null, 0, 9px);
+  @include size(percentage(1/1), null, null, null, 448px);
+  @include space(m, 0 0 0 auto);
+
   display: flex;
-  margin: 0 0 0 auto;
-  max-width: 448px;
-  position: absolute;
-  right: 0;
-  width: 100%;
-  z-index: 1;
+  z-index: $layer-2;
 
   @include bp(4) {
     bottom: 114px;
@@ -17,8 +15,8 @@
 }
 
 nav {
-  padding: 0 0 42px 42px;
-  width: 100%;
+  @include space(p, 0 0 ms(2) ms(2));
+  @include size(percentage(1/1));
 
   @include bp(4) {
     padding-bottom: 0;
