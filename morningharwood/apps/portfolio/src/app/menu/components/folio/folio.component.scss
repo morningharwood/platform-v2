@@ -1,46 +1,40 @@
 @import '../../../../assets/css/mixins';
 @import '../../../../assets/css/variables';
 
-$text: $default-text;
-$red-folio: $red-mh;
-
-:host {
-  @include hide();
-
-  color: $text;
-  left: 28px;
-  position: fixed;
-  z-index: 1;
-
-  @include bp(4) {
-    @include show(block);
-    bottom: 0;
-    left: 72px;
-    top: auto;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-  }
-
-  &::before {
-    background: $red-folio;
-    content: '';
-    height: 28px;
-    left: -22px;
-    position: absolute;
-    width: 4px;
-  }
-}
-
-h6, p {
+%sans-family {
   font-family: $sans-default-family;
   font-size: 10px;
   font-weight: 500;
 }
 
+:host {
+  @include hide();
+  @include position(fixed, null, null, null, ms(2), $layer-2);
+
+  color: $default-text;
+
+  @include bp(4) {
+    @include position(null, auto, null, 0, ms(3));
+    @include show(block);
+
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+  }
+
+  &::before {
+    @include position(absolute, null, null, null, -(ms(1)));
+    @include size(ms(-3), ms(1));
+
+    background: $red-mh;
+    content: '';
+  }
+}
+
 h6 {
-  color: $red-folio;
+  @extend %sans-family;
+  color: $red-mh;
 }
 
 p {
-  font-family: $sans-default-family;
+  @extend %sans-family;
 }

@@ -106,12 +106,15 @@ $retina-suffix: '@2x';
 /// @param {Length} $right [null] - Right offset
 /// @param {Length} $bottom [null] - Bottom offset
 /// @param {Length} $left [null] - Left offset
-@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null, $zIndex: null) {
+  @if $position != null {
+    position: $position;
+  }
   bottom: $bottom;
   left: $left;
-  position: $position;
   right: $right;
   top: $top;
+  z-index: $zIndex;
 }
 
 @mixin size(

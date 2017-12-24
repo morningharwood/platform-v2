@@ -42,6 +42,9 @@ export const initalState: RunningHeader = [
   {name: 'blockchain',},
   {name: 'smart contracts',},
   {name: 'just emailing me'},
+  {name: 'ethereum'},
+  {name: 'university'},
+  {name: 'engineering software'},
 ];
 
 
