@@ -1,7 +1,11 @@
 @import '../../../../../assets/css/mixins';
 @import '../../../../../assets/css/variables';
 
-
+$text: $default-text;
+$text-size: 36 * 1px;
+$hover: $red-mh;
+$index-offset: 4 * 1px;
+$i-font-size: 10 * 1px;
 
 :host {
   display: block;
@@ -9,44 +13,81 @@
 }
 
 a {
-  color: $default-text;
+  color: $text;
   cursor: pointer;
   display: flex;
-  font-size: ms(2);
+  font-size: $text-size;
   line-height: 1.6;
   position: relative;
   text-decoration: none;
-
   @include bp(4) {
-    font-size: ms(3);
+    font-size: 82px;
     line-height: 1.4;
   }
-}
 
-a:hover {
-  color: $red-mh;
-}
-
-a::before {
-  background: $default-text;
-  bottom: 0;
-  content: '';
-  height: 1px;
-  position: absolute;
-
-  @include bp(4) {
-    height: 2px;
-    left: 0;
-    right: ms(3);
-    width: 100%;
+  &:hover {
+    color: $hover;
   }
+
+  &::before {
+    background: $text;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: $default-bleed;
+    width: 100%;
+
+    @include bp(4) {
+      height: 2px;
+    }
+  }
+
+  .dark-filter & {
+    color: $dark-copy;
+
+    &:hover {
+      color: $hover;
+    }
+
+    &::before {
+      background: $dark-copy;
+    }
+  }
+
+  .light-filter & {
+    color: $light-copy;
+
+    &:hover {
+      color: $hover;
+    }
+
+    &::before {
+      background: $light-copy;
+    }
+  }
+
+  .sepia-filter & {
+    color: $sepia-copy;
+
+    &:hover {
+      color: $hover;
+    }
+
+    &::before {
+      background: $sepia-copy;
+    }
+  }
+
+  font-feature-settings: "kern" 1, "liga" 1, "swsh" 1;
 }
 
 span {
   @include bp(4) {
     display: flex;
     justify-content: flex-end;
-    padding: 0 ms(0) 0 0;
+    padding: 0 $default-bleed 0 0;
     position: relative;
     width: 100%;
   }
@@ -59,9 +100,6 @@ i {
   position: absolute;
 
   @include bp(4) {
-    $index-offset: 4 * 1px;
-    $i-font-size: 10 * 1px;
-
     @include show(inline-block);
     bottom: $index-offset;
     font-size: $i-font-size;

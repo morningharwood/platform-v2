@@ -2,7 +2,7 @@
 @import '../../../../assets/css/variables';
 
 :host {
-  bottom: 114px;
+  bottom: 9px;
   display: flex;
   margin: 0 0 0 auto;
   max-width: 448px;
@@ -10,10 +10,14 @@
   right: 0;
   width: 100%;
   z-index: 1;
+
+  @include bp(4) {
+    bottom: 114px;
+  }
 }
 
 nav {
-  padding: 0 0 ms(2) ms(2);
+  padding: 0 0 42px 42px;
   width: 100%;
 
   @include bp(4) {

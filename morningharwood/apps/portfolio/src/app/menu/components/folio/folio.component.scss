@@ -1,51 +1,46 @@
 @import '../../../../assets/css/mixins';
 @import '../../../../assets/css/variables';
 
+$text: $default-text;
+$red-folio: $red-mh;
+
 :host {
-  left: ms(1);
+  @include hide();
+
+  color: $text;
+  left: 28px;
   position: fixed;
-  top: ms(0);
   z-index: 1;
 
   @include bp(4) {
+    @include show(block);
     bottom: 0;
-    left: ms(3);
+    left: 72px;
     top: auto;
     transform: rotate(-90deg);
     transform-origin: 0 0;
   }
 
   &::before {
-    background: $red-mh;
+    background: $red-folio;
     content: '';
-    height: ms(1);
-    left: -(ms(1));
+    height: 28px;
+    left: -22px;
     position: absolute;
-    width: ms(-3);
+    width: 4px;
   }
 }
 
-h6,
-p {
-  color: $black-mh;
+h6, p {
   font-family: $sans-default-family;
-  font-size: ms(-1);
-  font-weight: 300;
+  font-size: 10px;
+  font-weight: 500;
 }
 
 h6 {
-  color: $red-mh;
+  color: $red-folio;
 }
 
-a {
-  text-decoration: none;
-
-  &:hover {
-    border-bottom: 1px dotted $black-mh;
-    color: $red-mh;
-  }
-
-  &:visited {
-    color: $black-mh;
-  }
+p {
+  font-family: $sans-default-family;
 }

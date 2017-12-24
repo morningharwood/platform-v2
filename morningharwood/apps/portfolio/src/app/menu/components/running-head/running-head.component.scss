@@ -1,41 +1,43 @@
-@import '../../../../assets/css/mixins';
-@import '../../../../assets/css/variables';
+@import '../../../../assets/css/_mixins.scss';
+@import '../../../../assets/css/_variables.scss';
+
+$text: $default-text;
+$hover: $red-mh;
 
 :host {
   background-size: auto 50%;
-  border: solid 1px darken($red-mh, 10%);
-  border-radius: ms(3);
-  bottom: ms(0);
+  display: block;
   font-family: $sans-default-family;
-  font-size: ms(-1);
+  font-size: 14px;
   font-weight: 700;
-  height: ms(3);
+  height: auto;
+  left: 16px;
   position: fixed;
-  right: ms(0);
-  width: ms(3);
-  z-index: 1;
+  top: 16px;
+  width: auto;
+  z-index: 4;
+
+  @include bp(1) {
+    left: 16px;
+  }
 
   @include bp(4) {
-    background: none;
-    border: 0;
-    border-radius: 0;
-    bottom: auto;
-    height: auto;
-    left: ms(3);
-    right: auto;
-    top: ms(3);
-    width: 400px;
+    left: 72px;
+    top: 72px;
   }
-}
 
-.container {
-  &::after {
-    bottom: -(ms(3));
+  &:before {
+    background-color: $red-mh;
     content: '';
-    height: 1px;
-    left: -(ms(6));
+    height: 55px;
+    left: -16px;
     position: absolute;
-    width: $hi-number;
+    top: 6px;
+    width: 3px;
+
+    @include bp(4) {
+      @include hide();
+    }
   }
 }
 
@@ -43,19 +45,45 @@ a {
   cursor: pointer;
   text-decoration: none;
 
+  &:hover {
+    .scroll-through {
+      border-bottom: dotted 1px $text;
+      color: $hover;
+    }
+  }
+
   &:visited {
-    color: $default-text;
+    color: $text;
+  }
+
+  &.highlight-all:hover {
+    border-bottom: dotted 1px $text;
+    color: $hover;
+
+    &.digital-to-physical {
+      .digital {
+        display: none;
+        visibility: hidden;
+      }
+
+      .physical {
+        display: inline;
+        visibility: visible;
+      }
+    }
   }
 }
 
-.highlight-all:hover {
-  border-bottom: dotted 1px $default-text;
-  color: $red-mh;
-}
+.digital-to-physical {
+  .digital {
+    display: inline;
+    visibility: visible;
+  }
 
-a:hover .scroll-through {
-  border-bottom: dotted 1px $default-text;
-  color: $red-mh;
+  .physical {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 dt {
@@ -63,27 +91,28 @@ dt {
 }
 
 dd {
-  @include hide();
-  font-size: ms(0);
+  font-size: 11px;
   font-weight: 400;
-  letter-spacing: .7px;
   line-height: 2;
-  padding-left: ms(2);
+  padding-left: 8px;
   position: relative;
 
   @include bp(4) {
-    @include show(block);
+    padding-left: 24px;
   }
 
   &::before {
-    content: '\2014';
     left: 0;
     position: absolute;
-    top: 2px;
+
+    @include bp(4) {
+      content: '\2014';
+      top: 2px;
+    }
   }
 }
 
 .scroll-through {
-  color: $red-mh;
-  font-style: italic;
+  color: $hover;
+  font-weight: bold;
 }

@@ -256,9 +256,9 @@ export class BonerGlDirective implements OnInit {
       this._scale,
       this._pivot,
     );
-    if (this._quat[ 2 ] <= 0.2999) {
-      this._openingAnimation();
-    } else {
+      if (this._quat[ 2 ] <= 0.2999) {
+        this._openingAnimation();
+      } else {
       quat.slerp(this._quat, this._quat, [
         0.0,
         (this.mouse.x / 10000),
