@@ -1,0 +1,104 @@
+@import '../../../../assets/css/mixins';
+@import '../../../../assets/css/variables';
+
+$grid-padding: 1;
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+dl {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+dt {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+dd {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+:host {
+  /* autoprefixer: off */
+  display: grid;
+  min-height: 100%;
+  width: 100%;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: ms(1);
+  /* autoprefixer: off */
+}
+
+.inline-list {
+  * { display: inline; }
+}
+
+.header {
+  padding: ms(1);
+
+  @include bp(4) {
+    /* autoprefixer: off */
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    /* autoprefixer: off */
+  }
+}
+
+.contact {
+  padding: ms($grid-padding);
+  text-align: right;
+
+  @include bp(4) {
+    /* autoprefixer: off */
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    /* autoprefixer: off */
+  }
+}
+
+.experience {
+  padding: ms($grid-padding);
+
+  @include bp(4) {
+    /* autoprefixer: off */
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    /* autoprefixer: off */
+  }
+}
+
+.education {
+  padding: ms($grid-padding);
+
+  @include bp(4) {
+    /* autoprefixer: off */
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    /* autoprefixer: off */
+  }
+}
+
+.aside {
+  padding: ms($grid-padding);
+
+  @include bp(4) {
+    /* autoprefixer: off */
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    /* autoprefixer: off */
+  }
+}

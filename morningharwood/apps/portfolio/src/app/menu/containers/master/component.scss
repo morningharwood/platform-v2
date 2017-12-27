@@ -1,35 +1,20 @@
-@import '../../../../assets/css/_mixins';
-@import '../../../../assets/css/_variables';
-
-$text: $default-text;
-$text-size: 36 * 1px;
-$hover: $red-mh;
+@import '../../../../assets/css/mixins';
+@import '../../../../assets/css/variables';
 
 :host {
-  align-items: flex-end;
-  bottom: 0;
-  padding: 0;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: 10;
+  @include position(fixed, null, 0, 0, 0, $layer-2);
+  @include size(percentage(1/1));
+  @include space(p, 0 0 0 0);
 
   @include bp(4) {
+    @include size(null, percentage(1/1), null, null, percentage(1/1));
+    @include space(p, 0 0 0 ms(3) 0);
     display: flex;
-    height: 100%;
-    max-width: 100%;
-    padding: 0 0 $default-bleed 0;
   }
 }
 
 .full-bleed-fixed {
-  bottom: 0;
+  @include position(fixed, 0, 0, 0, 0, 0);
+  @include size(percentage(1/1), percentage(1/1), null, null, percentage(1/1));
   display: block;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 0;
 }

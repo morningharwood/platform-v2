@@ -1,138 +1,18 @@
-$serif-font: "Times New Roman", Times, serif;
-$fun-font: "Comic Sans MS", cursive !important;
+@import 'assets/css/mixins';
+@import 'assets/css/reset';
+@import 'assets/css/global';
 
-body,
-div,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, th, td,
-article, aside, figure, footer, header, menu, nav, section {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, nav, section, audio, canvas, video {
-  display: block;
-}
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-b, strong {
-  font-weight: bold;
-}
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-a img, img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-
-input, textarea, button, select {
-  font-size: 100%;
-  line-height: normal;
-  margin: 0;
-  vertical-align: baseline;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-}
-
-textarea {
-  overflow: auto;
-}
-
-::selection {
-  background: red;
-  color: white;
-}
-
-::-moz-selection {
-  background: red;
-  color: white;
-}
-
-img::selection {
-  background: transparent;
-}
-
-img::-moz-selection {
-  background: transparent;
-}
-
-body {
-  -webkit-tap-highlight-color: rgba(255, 0, 0, 0.62);
-}
 
 .ie {
-
+  // put styles in here.
 }
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
-}
-
-html,
-body {
-  font-family: $serif-font;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-body {
-  font-size: 100%;
-}
-
-.router-wrap {
-  min-height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.konami {
-  font-family: $fun-font
 }

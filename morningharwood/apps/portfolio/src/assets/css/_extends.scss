@@ -3,21 +3,24 @@
   width: 100%;
 }
 
+%reset-space {
+  margin: 0;
+  padding: 0;
+}
+
 %center-flex {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
-
 %full-abs-bleed {
-  position: absolute;
+  bottom: 0;
   left: 0;
+  position: absolute;
   right: 0;
   top: 0;
-  bottom: 0;
 }
-
 
 %default-headline {
   font-size: $default-bleed;
