@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import * as RouterActions from '../../../router/actions';
-
+import { ResumeBlock } from './interfaces/index';
+import * as content from './content/data';
 
 @Component({
   selector: 'mh-resume-profile',
@@ -9,37 +10,11 @@ import * as RouterActions from '../../../router/actions';
   styleUrls: ['./component.scss'],
 })
 export class ResumeContainerComponent {
-  public techniques: string[] = [
-    'Object Oriented JavaScript',
-    'AngularJS',
-    'AWS',
-    'CSS/SCSS',
-    'Vector/DOM',
-    'motion graphics',
-    'semantic HTML',
-    'Typescript',
-    'NodeJS',
-    'Golang',
-    'i18n',
-    'a11y',
-    'and web workflow',
-  ];
-
-  public interests: string[] = [
-    'Interaction Design',
-    'Fullstack Development',
-    'ES Next',
-    'CSS4+',
-    'Modern Web to Native Workflows',
-    'Angular',
-    'Industrial Design',
-    'Typography',
-    'Entrepreneurship',
-    'Motion Design',
-    'Architecture',
-    'Skateboarding',
-    'and Guitar'
-  ];
+  public experiences: ResumeBlock[] = content.experiences;
+  public educations: ResumeBlock[] = content.educations;
+  public techniques: string[] = content.techniques;
+  public socials = content.socials;
+  public interests: string[] = content.interests;
 
   constructor(private store: Store<any>) {
   }

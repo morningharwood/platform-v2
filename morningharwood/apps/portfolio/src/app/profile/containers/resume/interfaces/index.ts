@@ -7,13 +7,7 @@ export interface ResumeHeader {
   phoneNumber: string;
 }
 
-export interface ResumeBlock {
-  headline: string;
-  title: string;
-  subTitle: string;
-  dateRange: string;
-  description?: string;
-}
+
 
 export interface ResumeAsideBlock {
   headline: string;
@@ -33,5 +27,13 @@ export interface ResumeAsideSocial {
 export interface Resume {
   header: ResumeHeader;
   body: ResumeBlock[];
-  aside: ResumeAsideBlock[] | ResumeAsideSocial[],
+  aside: ResumeAsideBlock[] | ResumeAsideSocial[];
+}
+
+
+export interface ResumeBlock {
+  place: string;
+  dateRange: string;
+  title: string;
+  jobDescription: string;
 }

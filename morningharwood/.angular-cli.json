@@ -5,6 +5,31 @@
   },
   "apps": [
     {
+      "name": "angular-pwa-app",
+      "root": "apps/angular-pwa-app/apps/portfolio/src",
+      "outDir": "dist/apps/angular-pwa-app",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../../../test.js",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "../../../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
       "name": "portfolio",
       "root": "apps/portfolio/src",
       "outDir": "dist/apps/portfolio",
@@ -72,6 +97,30 @@
     },
     {
       "project": "apps/service-worker/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/angular-pwa-app/apps/portfolio/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/angular-pwa-app/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/angular-pwa-app/apps/portfolio/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/angular-pwa-app/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/angular-pwa-app/apps/portfolio/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/angular-pwa-app/e2e/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
     }
   ],

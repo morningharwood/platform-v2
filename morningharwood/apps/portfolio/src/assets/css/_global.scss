@@ -28,7 +28,7 @@ html {
   font-size: $size;
 
   @include bp(4) {
-    font-size: calc(16px + .25vw);
+    font-size: calc(16px + .4vw);
   }
 }
 

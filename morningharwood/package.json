@@ -51,7 +51,7 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular/cli": "^1.6.3",
+    "@angular/cli": "nrwl/fix-cli-build#release16",
     "@angular/compiler-cli": "`^5.1.2`",
     "@angular/language-service": "^5.1.2",
     "@nestjs/common": "^4.5.2",

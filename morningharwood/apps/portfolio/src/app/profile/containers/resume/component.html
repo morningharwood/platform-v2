@@ -25,33 +25,12 @@
   <div class="wrapper">
     <h4>Experience</h4>
     <ul>
-      <li>
-        <h5>R/GA @ Google Mountain View</h5>
-        <p class="date-range">August 2015 - Present</p>
-        <p class="title">Senior Software Engineer</p>
+      <li *ngFor="let exp of experiences" class="p-b-1">
+        <h5>{{exp.place}}</h5>
+        <p class="date-range">{{exp.dateRange}}</p>
+        <p class="title">{{exp.title}}</p>
         <p class="job-description">
-          Works as an embedded Software Engineer for Google’s Interactive Marketing Division.
-        </p>
-      </li>
-      <li>
-        <h5>AKQA S.F.</h5>
-        <p class="date-range">August 2014 - August 2015</p>
-        <p class="title">Creative Developer</p>
-        <p class="job-description">
-          Worked as a Designer and Developer for physical and
-          digital brand experiences e.g. Target and Nike. Also,
-          worked as an embedded Web Developer for Apple’s
-          Interactive Marcom division.
-        </p>
-      </li>
-      <li>
-        <h5>QOMO HiteVision</h5>
-        <p class="date-range">January 2010 - January 2012</p>
-        <p class="title">Marketing Developer</p>
-        <p class="job-description">
-          Created comprehensive marketing materials through
-          web, print, and video for businesses, educational, and
-          governmental establishments.
+          {{exp.jobDescription}}
         </p>
       </li>
     </ul>
@@ -61,35 +40,12 @@
   <div class="wrapper">
     <h4>Education</h4>
     <ul>
-      <li>
-        <h5>Simon Fraser University</h5>
-        <p class="date-range">September 2011 ~ January 2014</p>
-        <p class="title">B.S. Interactive Systems</p>
+      <li *ngFor="let edu of educations" class="p-b-1">
+        <h5>{{edu.place}}</h5>
+        <p class="date-range">{{edu.dateRange}}</p>
+        <p class="title">{{edu.title}}</p>
         <p class="job-description">
-          Studied how to design, develop, and apply interactive
-          systems with particular emphasis on how people
-          use them through a combination of computing
-          foundations, user-centred design principles, and
-          programming practice.
-        </p>
-      </li>
-      <li>
-        <h5>Wayne State University</h5>
-        <p class="date-range">September 2005 ~ January 2008</p>
-        <p class="title">B.A. Asian Studies</p>
-        <p class="job-description">
-          To prepare students for the increasing demand for
-          professionals with training in Chinese and Japanese.
-        </p>
-      </li>
-      <li>
-        <h5>Oakland Community College</h5>
-        <p class="date-range">January 2004 ~ December 2005</p>
-        <p class="title">Liberal Arts Associate’s Degree</p>
-        <p class="job-description">
-          Created comprehensive marketing materials through
-          web, print, and video for businesses, educational, and
-          governmental establishments.
+          {{edu.jobDescription}}
         </p>
       </li>
     </ul>
@@ -116,16 +72,14 @@
   <div class="wrapper">
     <h4>Social</h4>
     <dl>
-      <dt>Github</dt>
-      <dd><a href="">matthewharwood</a></dd>
-      <dt>Linkedin</dt>
-      <dd>morningharwood</dd>
-      <dt>Linkedin</dt>
-      <dd>morningharwood</dd>
-      <dt>Linkedin</dt>
-      <dd>morningharwood</dd>
-      <dt>Linkedin</dt>
-      <dd>morningharwood</dd>
+      <ng-container  *ngFor="let social of socials">
+        <dt>
+          <p>{{social.place}}</p>
+        </dt>
+        <dd>
+          <a href="">{{social.text}}</a>
+        </dd>
+      </ng-container>
     </dl>
 
   </div>
