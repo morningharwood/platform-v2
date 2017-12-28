@@ -22,7 +22,7 @@
   }
 
   &::before {
-    @include position(absolute, null, null, null, -(ms(1)));
+    @include position(absolute, -6px, null, null, -24px);
     @include size(ms(-3), ms(1));
 
     background: $red-mh;

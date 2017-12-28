@@ -42,32 +42,53 @@ h3 {
   font-family: $sans-default-family;
   font-size: ms(0);
   font-weight: 400;
-  padding: ms(-1) 0;
+  padding: ms(0) 0;
+
+  @include bp(4) {
+    padding: ms(-1) 0;
+  }
 }
 
 h4 {
-  font-size: ms(1, $thread: aug);
+  font-size: ms(1);
   font-weight: 400;
-  padding: ms(-1) 0;
+  padding: ms(0) 0;
+
+  @include bp(4) {
+    font-size: ms(1, $thread: aug);
+    padding: ms(-1) 0;
+  }
 }
 
 h5 {
   font-family: $sans-default-family;
-  font-size: ms(-1);
+  font-size: ms(0);
   padding: ms(0) 0 0;
+
+  @include bp(4) {
+    font-size: ms(-1);
+  }
 }
 
 p {
   font-family: $sans-default-family;
-  font-size: ms(-1);
+  font-size: ms(0);
   line-height: ms(1);
+
+  @include bp(4) {
+    font-size: ms(-1);
+  }
 }
 
 a {
   color: $red-mh;
   font-family: $sans-default-family;
-  font-size: ms(-1);
+  font-size: ms(0);
   line-height: ms(1);
+
+  @include bp(4) {
+    font-size: ms(-1);
+  }
 }
 
 .date-range {
@@ -88,9 +109,16 @@ a {
   grid-auto-columns: 1fr;
   grid-auto-rows: auto;
   grid-gap: ms(1);
-  min-height: 100%;
-  width: 100%;
   /* autoprefixer: off */
+
+  min-height: 100%;
+  padding: ms(0) 0;
+  width: 100%;
+
+
+  @include bp(4) {
+    padding: 0;
+  }
 }
 
 .inline-list * {
@@ -99,9 +127,10 @@ a {
 
 
 .header {
-  padding: ms(1);
+  padding: 0 ms($grid-padding);
 
   @include bp(4) {
+    padding: ms(1);
 
     /* autoprefixer: off */
     grid-column: 1 / 3;
@@ -111,47 +140,56 @@ a {
 }
 
 .contact {
-  padding: ms($grid-padding);
-  text-align: right;
+  padding: 0 ms($grid-padding);
 
   @include bp(4) {
     /* autoprefixer: off */
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     /* autoprefixer: off */
+
+    padding: ms($grid-padding);
+    text-align: right;
+
   }
 }
 
 .experience {
-  padding: ms($grid-padding);
+  padding: 0 ms($grid-padding);
 
   @include bp(4) {
     /* autoprefixer: off */
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     /* autoprefixer: off */
+
+    padding: ms($grid-padding);
   }
 }
 
 .education {
-  padding: ms($grid-padding);
+  padding: 0 ms($grid-padding);
 
   @include bp(4) {
     /* autoprefixer: off */
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     /* autoprefixer: off */
+
+    padding: ms($grid-padding);
   }
 }
 
 .aside {
-  padding: ms($grid-padding);
+  padding: 0 ms($grid-padding);
 
   @include bp(4) {
     /* autoprefixer: off */
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     /* autoprefixer: off */
+
+    padding: ms($grid-padding);
   }
 }
 
