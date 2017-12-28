@@ -11,9 +11,7 @@ img::selection {
   background: transparent;
 }
 
-body {
-  -webkit-tap-highlight-color: transparentize($red-mh, .1);
-}
+
 
 html,
 body {
@@ -21,12 +19,21 @@ body {
   @include size(percentage(1/1), percentage(1/1));
 
   font-family: $serif-font;
-  font-size: ms(0);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  $size: 16px;
+  font-size: $size;
+
+  @include bp(4) {
+    font-size: calc(16px + .25vw);
+  }
+}
+
 body {
+  -webkit-tap-highlight-color: transparentize($red-mh, .1);
   font-size: percentage(1/1);
 }
 
