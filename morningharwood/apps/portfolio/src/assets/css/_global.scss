@@ -22,6 +22,8 @@ body {
 
   font-family: $serif-font;
   font-size: ms(0);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
