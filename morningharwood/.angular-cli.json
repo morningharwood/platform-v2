@@ -1,10 +1,53 @@
 {
   "$schema": "./node_modules/@nrwl/schematics/src/schema.json",
   "project": {
-    "name": "morningharwood",
-    "npmScope": "morningharwood",
-    "latestMigration": "20171219-add-affected-commands"
+    "name": "morningharwood"
   },
+  "apps": [
+    {
+      "name": "portfolio",
+      "root": "apps/portfolio/src",
+      "outDir": "dist/apps/portfolio",
+      "assets": [
+        "favicon.ico",
+        "apple-touch-icon.png",
+        "favicon-32x32.png",
+        "favicon-16x16.png",
+        "manifest.json",
+        "safari-pinned-tab.svg",
+        "humans.txt",
+        "license.txt",
+        "404.html",
+        "android-chrome-256x256.png",
+        "android-chrome-192x192.png",
+        "mstile-150x150.png",
+        "browserconfig.xml"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "serviceWorker": true,
+      "styles": [
+        "styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "event-types",
+      "appRoot": "",
+      "root": "libs/event-types/apps/portfolio/src",
+      "test": "../../../../../test.js"
+    }
+  ],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
@@ -30,63 +73,14 @@
     }
   },
   "defaults": {
-    "schematics": {
-      "collection": "@nrwl/schematics",
-      "postGenerate": "npm run format",
-      "newProject": [
-        "app",
-        "lib"
-      ]
-    },
     "styleExt": "scss",
-    "component": {}
+    "component": {
+    },
+    "schematics": {
+      "collection": "@nrwl/schematics"
+    }
   },
   "warnings": {
     "typescriptMismatch": false
-  },
-  "apps": [
-    {
-      "name": "portfolio",
-      "root": "apps/portfolio/src",
-      "outDir": "dist/apps/portfolio",
-      "assets": [
-        "assets",
-        "favicon.ico",
-        "apple-touch-icon.png",
-        "favicon-32x32.png",
-        "favicon-16x16.png",
-        "manifest.json",
-        "safari-pinned-tab.svg",
-        "humans.txt",
-        "license.txt",
-        "404.html",
-        "android-chrome-256x256.png",
-        "android-chrome-192x192.png",
-        "mstile-150x150.png",
-        "browserconfig.xml"
-      ],
-      "index": "index.html",
-      "main": "main.ts",
-      "polyfills": "polyfills.ts",
-      "test": "../../../test.js",
-      "tsconfig": "tsconfig.app.json",
-      "testTsconfig": "../../../tsconfig.spec.json",
-      "prefix": "app",
-      "styles": [
-        "styles.scss"
-      ],
-      "scripts": [],
-      "environmentSource": "environments/environment.ts",
-      "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
-    },
-    {
-      "name": "event-types",
-      "root": "libs/event-types/apps/portfolio/src",
-      "test": "../../../../../test.js",
-      "appRoot": ""
-    }
-  ]
+  }
 }

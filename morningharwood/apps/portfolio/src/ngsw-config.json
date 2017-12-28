@@ -1,0 +1,39 @@
+{
+  "index": "/index.html",
+  "assetGroups": [{
+    "name": "portfolio",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "/favicon.ico",
+        "/index.html",
+        "/apple-touch-icon.png",
+        "/favicon-32x32.png",
+        "/favicon-16x16.png",
+        "/manifest.json",
+        "/safari-pinned-tab.svg",
+        "/humans.txt",
+        "/license.txt",
+        "/404.html",
+        "/android-chrome-256x256.png",
+        "/android-chrome-192x192.png",
+        "/mstile-150x150.png",
+        "/browserconfig.xml"
+      ],
+      "versionedFiles": [
+        "/*.bundle.css",
+        "/*.bundle.js",
+        "/*.chunk.js"
+      ]
+    }
+  }, {
+    "name": "assets",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "/assets/**"
+      ]
+    }
+  }]
+}

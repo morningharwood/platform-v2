@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { NxModule } from '@nrwl/nx';
 import { routes } from './app.routes';
 import { RouterModule } from '@angular/router';
@@ -16,7 +17,8 @@ import { RouterEffects } from './router/effects';
 import {MenuModule} from "./menu/module";
 import {WorkModule} from "./work/module";
 import {LabModule} from "./lab/module";
-
+const wtf:any = () => console.log('yooo', environment);
+wtf();
 @NgModule({
   imports: [
     BrowserModule,
@@ -28,7 +30,12 @@ import {LabModule} from "./lab/module";
     WorkModule,
     StoreModule.forRoot(reducers),
     EffectsModule.forRoot([RouterEffects]),
-    !environment.production ? StoreDevtoolsModule.instrument() : [],
+    !environment.production
+        ? StoreDevtoolsModule.instrument()
+        : [],
+    ServiceWorkerModule.register('/ngsw-worker.js', {
+      enabled: environment.production
+    }),
     StoreRouterConnectingModule,
   ],
   declarations: [AppComponent],
@@ -38,3 +45,4 @@ import {LabModule} from "./lab/module";
   ]
 })
 export class AppModule {}
+
