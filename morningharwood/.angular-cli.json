@@ -65,6 +65,14 @@
     {
       "project": "apps/portfolio/e2e/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/service-worker/apps/portfolio/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/service-worker/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
     }
   ],
   "test": {
@@ -74,8 +82,7 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "component": {
-    },
+    "component": {},
     "schematics": {
       "collection": "@nrwl/schematics"
     }
