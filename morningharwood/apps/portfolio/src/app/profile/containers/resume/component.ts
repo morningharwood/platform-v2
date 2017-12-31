@@ -17,6 +17,7 @@ export class ResumeContainerComponent {
   public techniques: string[] = content.techniques;
   public socials = content.socials;
   public interests: string[] = content.interests;
+  public inspiration = content.inspiration;
 
   constructor(private store: Store<any>) {
   }

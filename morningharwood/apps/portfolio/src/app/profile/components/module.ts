@@ -5,12 +5,16 @@ import { DisclaimerComponent } from './disclaimer';
 import { CommonModule } from '@angular/common';
 import { StandardListComponent } from './standard-list/component';
 import { StandardTableComponent } from './standard-table/component';
+import { StandardRichComponent } from './rich-list/component';
+import { CarouselListComponent } from './carousel-list/component';
 
 export const DECLARE_EXPORT = [
   StandardBlockComponent,
   DisclaimerComponent,
   StandardListComponent,
-  StandardTableComponent
+  StandardTableComponent,
+  StandardRichComponent,
+  CarouselListComponent
 ];
 
 @NgModule({

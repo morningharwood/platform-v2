@@ -147,3 +147,150 @@ export const techniques = [
   'a11y',
   'and web workflow',
 ];
+
+export const inspiration = [
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'hF1ke2OhWxI',
+    youtubePlaylistId: 'PLF7eeGkHcenS75D3X73YfcSAQ1QPKxUxf',
+    title: 'Shots of Awe',
+    personName: 'Jason Silva',
+    category: 'Philosophy'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'evQsOFQju08',
+    youtubePlaylistId: '',
+    title: 'Vsauce',
+    personName: 'Michael Stevens',
+    category: 'Science'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'QKJRS5ZzkDk',
+    youtubePlaylistId: '',
+    title: 'Peer Eriksson',
+    personName: 'Various Artists',
+    category: 'Culture'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'OeHjN4oWVfk',
+    youtubePlaylistId: '',
+    title: 'VideogameDunkey',
+    personName: 'Jason Gastrow',
+    category: 'Video Games'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'jTW5_KvkGoE',
+    youtubePlaylistId: '',
+    title: 'The Needle Drop',
+    personName: 'Anthony Fantano',
+    category: 'Music Reviews'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'FqjSYtKWyX8',
+    youtubePlaylistId: '',
+    title: 'This Exists',
+    personName: 'Sam Sutherland',
+    category: 'Culture'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'JQgZsDbrhxA',
+    youtubePlaylistId: '',
+    title: 'Nowness',
+    personName: 'Various Artists',
+    category: 'Culture'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'JQgZsDbrhxA',
+    youtubePlaylistId: '',
+    title: 'Vice',
+    personName: 'Various Artists',
+    category: 'News / Documentary'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'p_IHotHxIl8',
+    youtubePlaylistId: 'PLJ8cMiYb3G5fyqfIwGjH2fYC5fFLfdwW4',
+    title: 'Vox - Earworm',
+    personName: 'Various Artists',
+    category: 'Music History'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'i7kh8pNRWOo',
+    youtubePlaylistId: '',
+    title: 'Jonathan Blow',
+    personName: 'Jonathan Blow',
+    category: 'Gaming / Programming'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'zm9bqSSiIdo',
+    youtubePlaylistId: 'PL7wAPgl1JVvUEb0dIygHzO4698tmcwLk9',
+    title: 'Coding Math',
+    personName: 'Keith Peterson',
+    category: 'Math / Programming'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'aNR4n0i2ZlM',
+    youtubePlaylistId: '',
+    title: 'Inigo Quilez',
+    personName: 'Inigo Quilez',
+    category: 'Graphics Programming'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: '4niz8TfY794',
+    youtubePlaylistId: '',
+    title: 'Vihart',
+    personName: 'Victoria Hart',
+    category: 'Math & Music Theory'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'Xgjb8spwew',
+    youtubePlaylistId: '',
+    title: 'Elliott Hulse',
+    personName: 'Elliott Hulse',
+    category: 'Motivation & Health'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'N_UQx8dPPkc',
+    youtubePlaylistId: 'PLW2eQOsUPlWJRfWGOi9gZdc3rE4Fke0Wv',
+    title: 'Todd Motto',
+    personName: 'Todd Motto',
+    category: 'Programming'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'ferZnZ0_rSM',
+    youtubePlaylistId: '',
+    title: 'NPR Music',
+    personName: 'Various Artists',
+    category: 'Music'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'BMUiFMZr7vk',
+    youtubePlaylistId: 'PL0zVEGEvSaeEd9hlmCXrk5yUyqUag',
+    title: 'Fun Fun Function',
+    personName: 'Mattias Petter Johansson',
+    category: 'Programming'
+  },
+  {
+    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    youtubeId: 'JB3v3bDba5g',
+    youtubePlaylistId: 'PLghL9V9QTN0iqtOA5eFJWqfU5pymY',
+    title: 'Wisecrack',
+    personName: 'Various Artists',
+    category: 'Philosophy'
+  }
+];
