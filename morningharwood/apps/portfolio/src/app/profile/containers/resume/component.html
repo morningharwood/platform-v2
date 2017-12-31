@@ -1,88 +1,61 @@
 
 <header class="header">
-  <h2>Matthew Harwood</h2>
-  <h3>Developer + Multidisciplinary Designer</h3>
-  <p>
-    I am a generalist; slowly becoming a specialist in Web Development. I mix art, design, and technology, to create effective experiences that deliver value at scale. My professional goals are simple: surround myself by smart, energetic, creative people while working on solving problems that matter.
-  </p>
+  <h2>{{me.name}}</h2>
+  <h3>{{me.title}}</h3>
+  <p>{{me.description}}</p>
 </header>
 <div class="contact">
   <ul>
     <li>
-      <a href="https://www.morningharwood.com">www.morningharwood.com</a>
+      <a href="{{me.fullDomain}}">
+        {{me.domain}}
+      </a>
     </li>
     <li>
-      <a href="mailto:matthhar12@gmail.com?subject=Hello Matthew">matthhar12@gmail.com</a>
+      <a href="mailto:{{me.email}}?subject=Hello Matthew">
+        {{me.email}}
+      2</a>
     </li>
     <li>
-      <a  href="tel:1-415-486-6018">
-        1.415.486.6018
+      <a href="tel:{{me.phone}}">
+        {{me.phone}}
       </a>
     </li>
   </ul>
 </div>
+
 <div class="experience">
-  <div class="wrapper">
-    <h4>Experience</h4>
-    <ul>
-      <li *ngFor="let exp of experiences" class="p-b-1">
-        <h5>{{exp.place}}</h5>
-        <p class="date-range">{{exp.dateRange}}</p>
-        <p class="title">{{exp.title}}</p>
-        <p class="job-description">
-          {{exp.jobDescription}}
-        </p>
-      </li>
-    </ul>
-  </div>
+  <mh-standard-block
+      [title]="'Experiences'"
+      [data]="experiences">
+  </mh-standard-block>
 </div>
+
 <div class="education">
-  <div class="wrapper">
-    <h4>Education</h4>
-    <ul>
-      <li *ngFor="let edu of educations" class="p-b-1">
-        <h5>{{edu.place}}</h5>
-        <p class="date-range">{{edu.dateRange}}</p>
-        <p class="title">{{edu.title}}</p>
-        <p class="job-description">
-          {{edu.jobDescription}}
-        </p>
-      </li>
-    </ul>
-  </div>
+  <mh-standard-block
+      [title]="'Education'"
+      [data]="educations">
+  </mh-standard-block>
+  <mh-standard-block
+      [title]="'Awards'"
+      [data]="awards">
+  </mh-standard-block>
 </div>
 
 <aside class="aside">
-  <div class="wrapper">
-    <h4>Technical</h4>
-    <ul class="inline-list">
-      <li *ngFor="let technique of techniques">
-        <p>{{technique}}</p>
-      </li>
-    </ul>
-  </div>
-  <div class="wrapper">
-    <h4>Interests</h4>
-    <ul class="inline-list">
-      <li *ngFor="let interest of interests">
-        <p>{{interest}}</p>
-      </li>
-    </ul>
-  </div>
-  <div class="wrapper">
-    <h4>Social</h4>
-    <dl>
-      <ng-container  *ngFor="let social of socials">
-        <dt>
-          <p>{{social.place}}</p>
-        </dt>
-        <dd>
-          <a href="">{{social.text}}</a>
-        </dd>
-      </ng-container>
-    </dl>
+  <mh-standard-list
+      [data]="techniques"
+      [title]="'Technical'">
+  </mh-standard-list>
 
-  </div>
+  <mh-standard-list
+      [data]="interests"
+      [title]="'Interests'">
+  </mh-standard-list>
+  <mh-standard-table
+      [data]="socials"
+      [title]="'Social'">
+  </mh-standard-table>
 </aside>
 
 <div style="position:fixed; top:0; display: none;">

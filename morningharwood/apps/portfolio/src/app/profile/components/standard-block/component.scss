@@ -1,0 +1,25 @@
+@import '../../../../assets/css/mixins';
+@import '../../../../assets/css/variables';
+
+.date-range {
+  font-style: italic;
+  opacity: .6;
+  padding: ms(0) 0 0;
+}
+
+.title {
+  color: $red-mh;
+  font-style: italic;
+  padding: 0 0 ms(0);
+
+  a {
+    @include bp(4) {
+      font-size: ms(0);
+    }
+  }
+}
+
+
+.p-b-1 {
+  padding-bottom: ms(0);
+}

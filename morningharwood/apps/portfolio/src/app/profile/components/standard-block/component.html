@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <h4>{{title}}</h4>
+  <ul>
+    <li *ngFor="let d of data" class="p-b-1">
+      <h5>{{d.place}}</h5>
+      <p class="date-range">{{d.dateRange}}</p>
+      <p class="title">{{d.title}}</p>
+      <mh-disclaimer
+          *ngIf="d.jobDescription"
+          [where]="d.jobDescription">
+      </mh-disclaimer>
+    </li>
+  </ul>
+</div>

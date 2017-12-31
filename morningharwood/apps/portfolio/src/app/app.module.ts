@@ -17,6 +17,7 @@ import { RouterEffects } from './router/effects';
 import {MenuModule} from "./menu/module";
 import {WorkModule} from "./work/module";
 import {LabModule} from "./lab/module";
+import { MhPipesModule } from './pipe/module';
 const wtf:any = () => console.log('yooo', environment);
 wtf();
 @NgModule({
@@ -30,6 +31,7 @@ wtf();
     WorkModule,
     StoreModule.forRoot(reducers),
     EffectsModule.forRoot([RouterEffects]),
+    MhPipesModule,
     !environment.production
         ? StoreDevtoolsModule.instrument()
         : [],

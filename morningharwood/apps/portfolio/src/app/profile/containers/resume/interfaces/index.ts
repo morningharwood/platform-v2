@@ -35,5 +35,6 @@ export interface ResumeBlock {
   place: string;
   dateRange: string;
   title: string;
-  jobDescription: string;
+  jobDescription?: string;
+  url?: string;
 }

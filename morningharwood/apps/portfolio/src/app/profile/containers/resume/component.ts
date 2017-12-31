@@ -10,8 +10,10 @@ import * as content from './content/data';
   styleUrls: ['./component.scss'],
 })
 export class ResumeContainerComponent {
+  public me = content.me;
   public experiences: ResumeBlock[] = content.experiences;
   public educations: ResumeBlock[] = content.educations;
+  public awards: any = content.awards;
   public techniques: string[] = content.techniques;
   public socials = content.socials;
   public interests: string[] = content.interests;
