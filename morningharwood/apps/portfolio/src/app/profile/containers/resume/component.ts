@@ -3,6 +3,8 @@ import { Store } from '@ngrx/store';
 import * as RouterActions from '../../../router/actions';
 import { ResumeBlock } from './interfaces/index';
 import * as content from './content/data';
+import { selectFeature } from '../../components/video-block/actions/index';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'mh-resume-profile',
@@ -18,8 +20,12 @@ export class ResumeContainerComponent {
   public socials = content.socials;
   public interests: string[] = content.interests;
   public inspiration = content.inspiration;
+  public inspirationPodCast = content.inspirationPodCast;
+  public selectedVideoObs: Observable<any>;
 
   constructor(private store: Store<any>) {
+    this.selectedVideoObs = store.select(selectFeature);
+    this.selectedVideoObs.subscribe(console.log);
   }
 
   public back() {

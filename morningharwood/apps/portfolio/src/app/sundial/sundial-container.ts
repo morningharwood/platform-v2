@@ -10,6 +10,5 @@ import {
 export class SundialContainerDirective implements OnInit {
   constructor() {}
   ngOnInit() {
-    console.log(new Date());
   }
 }

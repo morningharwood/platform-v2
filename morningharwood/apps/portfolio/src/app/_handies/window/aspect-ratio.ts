@@ -50,7 +50,6 @@ export class AspectRatioService {
   }
 
   public isOrientation(event): Orientations {
-    // console.log(event);
     if(this.isLandscape()){
       return Orientations['1'];
     } else if(this.isPortrait()) {

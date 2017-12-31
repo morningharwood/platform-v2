@@ -1,5 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { style, animate, transition, trigger, state } from '@angular/animations';
+import { Store } from '@ngrx/store';
+import { Update } from '../../video-block/actions/index';
 
 @Component({
   selector: 'mh-carousel-item',
@@ -9,15 +11,17 @@ import { style, animate, transition, trigger, state } from '@angular/animations'
 
     trigger('popOverState', [
       state('show', style({
-        opacity: 1
+        opacity: 1,
+        zIndex: 10,
       })),
-      state('hide',   style({
-        opacity: 0
+      state('hide', style({
+        opacity: 0,
+        zIndex: -1,
       })),
       transition('show => hide', animate('300ms ease-out')),
-      transition('hide => show', animate('600ms ease-in'))
-    ])
-  ]
+      transition('hide => show', animate('600ms ease-in')),
+    ]),
+  ],
 })
 export class CarouselItemComponent {
   @Input() public data: any;
@@ -26,7 +30,22 @@ export class CarouselItemComponent {
 
   public show = false;
 
+  constructor(private store: Store<any>) {
+  }
+
   public get stateName(): string {
     return this.index === this.active ? 'show' : 'hide';
+  }
+
+  @HostListener('click')
+  public updateYtId(): void {
+    const ud = {
+      id: 'active_video',
+      changes: {
+        ytId: this.data.youtubeId,
+      },
+    };
+
+    this.store.dispatch(new Update(ud.changes));
   }
 }

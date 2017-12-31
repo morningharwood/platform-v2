@@ -4,7 +4,7 @@
   <h3>{{me.title}}</h3>
   <p>{{me.description}}</p>
 </header>
-<div class="contact">
+<section class="contact">
   <ul>
     <li>
       <a href="{{me.fullDomain}}">
@@ -22,16 +22,16 @@
       </a>
     </li>
   </ul>
-</div>
+</section>
 
-<div class="experience">
+<section class="experience">
   <mh-standard-block
       [title]="'Experiences'"
       [data]="experiences">
   </mh-standard-block>
-</div>
+</section>
 
-<div class="education">
+<section class="education">
   <mh-standard-block
       [title]="'Education'"
       [data]="educations">
@@ -40,7 +40,7 @@
       [title]="'Awards'"
       [data]="awards">
   </mh-standard-block>
-</div>
+</section>
 
 <aside class="aside">
   <mh-standard-list
@@ -61,7 +61,17 @@
       [data]="inspiration"
       [title]="'Inspiration'">
   </mh-carousel-list>
+
+  <mh-carousel-list
+      [data]="inspirationPodCast"
+      [delay]="2750">
+  </mh-carousel-list>
+
+  <mh-video-block [ytId]="selectedVideoObs | async">
+
+  </mh-video-block>
 </aside>
+
 
 <div style="position:fixed; top:0; display: none;">
   <button (click)="go('menu')">Menu</button>

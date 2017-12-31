@@ -19,8 +19,8 @@ import {WorkModule} from "./work/module";
 import {LabModule} from "./lab/module";
 import { MhPipesModule } from './pipe/module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-const wtf:any = () => console.log('yooo', environment);
-wtf();
+
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,

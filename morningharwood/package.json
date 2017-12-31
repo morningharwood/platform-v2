@@ -48,6 +48,7 @@
     "global": "^4.3.2",
     "lodash": "4.17.4",
     "rxjs": "^5.5.2",
+    "youtube-player": "^5.4.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
@@ -66,6 +67,7 @@
     "@types/lodash": "4.14.91",
     "@types/node": "~8.5.2",
     "@types/yargs": "10.0.0",
+    "@types/youtube": "^0.0.31",
     "body-parser": "^1.18.2",
     "codelyzer": "^4.0.2",
     "cors": "^2.8.4",

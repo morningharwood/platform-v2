@@ -1,0 +1,22 @@
+@import '../../../../assets/css/mixins';
+@import '../../../../assets/css/variables';
+
+
+:host {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 337px;
+  height: 189px;
+  background: white;
+  box-shadow: -10px -10px 16px rgba(0, 0, 0, .05);
+  z-index: $primary;
+}
+
+.wrapper {
+  @include size(percentage(1/1), percentage(1/1))
+}
+
+#mh-yt-videoframe {
+  @include size(percentage(1/1), percentage(1/1))
+}

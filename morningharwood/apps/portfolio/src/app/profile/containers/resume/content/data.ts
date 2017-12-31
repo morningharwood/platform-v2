@@ -294,3 +294,76 @@ export const inspiration = [
     category: 'Philosophy'
   }
 ];
+
+export const inspirationPodCast = [
+  {
+    poster: 'https://lh3.googleusercontent.com/O9x0NpeCf8oBTk7xOZzAtpfq-qq5qEBMs2mNVn8kxz_fZf5mMeqrr5C4W6g=s360-c-e100-rwu-v1',
+    youtubeId: '6zBAGZjnkVA',
+    youtubePlaylistId: 'PLJesql-aSfX6PKiA6XAjzbUCWiYCUkU2q',
+    title: 'Adventures In Angular',
+    personName: 'Charles Max Wood',
+    category: 'Angular Programming'
+  },
+  {
+    poster: 'https://lh3.googleusercontent.com/CYxJarotC730qwLdWg4K-cRcXgDhBGALxkHmEGz0mbdz9Ki2JozygkWLKy8B3A=s360-c-e100-rwu-v1',
+    youtubeId: 'I1YKcOSClGU',
+    youtubePlaylistId: 'PLDtc_uppNe1oyTZ6HQc3jEU1Q0WRpTWGF',
+    title: 'Waking up with Sam Harris',
+    personName: 'Sam Harris',
+    category: 'Philosophy / News / Science'
+  },
+  {
+    poster: 'https://lh3.googleusercontent.com/5r3kj1AQJ8u0liWlN3L3WXhqoHzlxj21PeIsA1OHErPYfET7n3XymxVinSY=s360-c-e100-rwu-v1',
+    youtubeId: '2_kEmYTiHtc',
+    youtubePlaylistId: 'PLk1Sqn_f33KuS7ZSVMJqzFaqOyyl-esmG',
+    title: 'The Joe Rogan Experience',
+    personName: 'Joe Rogan',
+    category: 'Various Topics'
+  },
+  {
+    poster: 'https://lh3.googleusercontent.com/g7kf9vjhnFRXqp1pAxSH8V_787wS4xPlDlJ1UmcW95-FU8h8h06yuiq2JT11Ng=s360-c-e100-rwu-v1',
+    youtubeId: '',
+    youtubePlaylistId: '',
+    outLink: 'https://play.google.com/music/m/Ipbuascuv6vbya2vic4ln5lbvti?t=LambdaCast',
+    title: 'Lambda Cast',
+    personName: '',
+    category: 'Functional Programming'
+  },
+  {
+    poster: 'https://lh3.googleusercontent.com/NXcVZtMZpgHdoaDuZkfGHcH4zO-R52z4MKu1nlGb85AaHeYUNv1I0XhNwQcp=s360-c-e100-rwu-v1',
+    youtubeId: '',
+    youtubePlaylistId: '',
+    outLink: 'https://play.google.com/music/m/Irhlugse7hhe7scqjp7x22ke73q?t=Voices_of_VR_Podcast__Designing_for_Virtual_Reality',
+    title: 'Voices of VR',
+    personName: 'Kent By',
+    category: 'VR & AR'
+  },
+  {
+    poster: 'https://lh3.googleusercontent.com/7eTHUC9vDIUZKQlr5xcr0tlHK0EMQ74pSvXYzVKpk8qIhVdk_QsfjtvUZVLC=s360-c-e100-rwu-v1',
+    youtubeId: '',
+    youtubePlaylistId: '',
+    outLink: 'https://play.google.com/music/m/Iwd6tw2ry437rn76v5geoi6ogxq?t=Functional_Geekery',
+    title: 'Functional Geekery',
+    personName: '',
+    category: 'Functional Programming'
+  },
+  {
+    poster: 'https://lh3.googleusercontent.com/PeaLTKKucRs3UJo0QUW8ytKYHJJ9xbkRRiFdDAVJHMg-sFbMGfl1tNr5LlBm=s360-c-e100-rwu-v1',
+    youtubeId: '',
+    youtubePlaylistId: '',
+    outLink: 'https://play.google.com/music/m/Iymp2oheqqsejlysa2gvtmnwryu?t=Breaking_Math_Podcast',
+    title: 'Breaking Math',
+    personName: '',
+    category: 'Math'
+  },
+  {
+    poster: 'https://lh3.googleusercontent.com/KDFZd4NfA8On8jhhLkKySP-yAOAZXb7lvcOpLDhSBElES8vatElt55Zuein-=s360-c-e100-rwu-v1',
+    youtubeId: '',
+    youtubePlaylistId: '',
+    outLink: 'https://play.google.com/music/m/Iytzq4vxrqmr6ed6tnxrfchvcoi?t=All_JavaScript_Podcasts_by_Devchattv',
+    title: 'All JavaScript Podcast',
+    personName: 'Charles Max Wood',
+    category: 'Javascript Programming'
+  },
+
+];

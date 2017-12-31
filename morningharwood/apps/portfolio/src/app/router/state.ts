@@ -33,6 +33,6 @@ export class CustomSerializer implements RouterStateSerializer<RouterStateUrl> {
   }
 }
 
-export const reducers: ActionReducerMap<State> = {
+export const reducers: ActionReducerMap<any> = {
   routerReducer: routerReducer
 };

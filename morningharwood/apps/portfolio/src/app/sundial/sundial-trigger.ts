@@ -17,6 +17,5 @@ export class SundialTriggerDirective implements OnInit{
   constructor() {}
 
   ngOnInit() {
-    console.log('imma child');
   }
 }
