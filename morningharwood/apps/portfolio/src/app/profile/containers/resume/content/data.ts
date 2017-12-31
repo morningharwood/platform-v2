@@ -150,7 +150,7 @@ export const techniques = [
 
 export const inspiration = [
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-0bFnBq_WXBo/AAAAAAAAAAI/AAAAAAAAAAA/O0bTWgENUM0/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'hF1ke2OhWxI',
     youtubePlaylistId: 'PLF7eeGkHcenS75D3X73YfcSAQ1QPKxUxf',
     title: 'Shots of Awe',
@@ -158,7 +158,7 @@ export const inspiration = [
     category: 'Philosophy'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-0YGU25OjtDM/AAAAAAAAAAI/AAAAAAAAAAA/Vhjw8Wwnu2w/s288-c-k-no-mo-rj-c0xffffff/photo.jpgg',
     youtubeId: 'evQsOFQju08',
     youtubePlaylistId: '',
     title: 'Vsauce',
@@ -166,7 +166,7 @@ export const inspiration = [
     category: 'Science'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-E4PnJqf7rW4/AAAAAAAAAAI/AAAAAAAAAAA/s0z3U8hFTUk/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'QKJRS5ZzkDk',
     youtubePlaylistId: '',
     title: 'Peer Eriksson',
@@ -174,7 +174,7 @@ export const inspiration = [
     category: 'Culture'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-ftMaOzF43WA/AAAAAAAAAAI/AAAAAAAAAAA/rks3UOR9mGc/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'OeHjN4oWVfk',
     youtubePlaylistId: '',
     title: 'VideogameDunkey',
@@ -182,7 +182,7 @@ export const inspiration = [
     category: 'Video Games'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-LzrgDO3iEdc/AAAAAAAAAAI/AAAAAAAAAAA/qh-jOfZDCg8/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'jTW5_KvkGoE',
     youtubePlaylistId: '',
     title: 'The Needle Drop',
@@ -190,7 +190,7 @@ export const inspiration = [
     category: 'Music Reviews'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-E8L7xuAeZsQ/AAAAAAAAAAI/AAAAAAAAAAA/QhfJWELDd5M/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'FqjSYtKWyX8',
     youtubePlaylistId: '',
     title: 'This Exists',
@@ -198,7 +198,7 @@ export const inspiration = [
     category: 'Culture'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-APmV4EfvBLI/AAAAAAAAAAI/AAAAAAAAAAA/mRFDuaT-W_o/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'JQgZsDbrhxA',
     youtubePlaylistId: '',
     title: 'Nowness',
@@ -206,7 +206,7 @@ export const inspiration = [
     category: 'Culture'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-SuohYAOTZvs/AAAAAAAAAAI/AAAAAAAAAAA/JHg2bUQ0Gjc/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'JQgZsDbrhxA',
     youtubePlaylistId: '',
     title: 'Vice',
@@ -214,7 +214,7 @@ export const inspiration = [
     category: 'News / Documentary'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-moy7q66uDVs/AAAAAAAAAAI/AAAAAAAAAAA/3kiAD7O0Q_E/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'p_IHotHxIl8',
     youtubePlaylistId: 'PLJ8cMiYb3G5fyqfIwGjH2fYC5fFLfdwW4',
     title: 'Vox - Earworm',
@@ -222,7 +222,7 @@ export const inspiration = [
     category: 'Music History'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-YG5j1CtAsyo/AAAAAAAAAAI/AAAAAAAAAAA/GJnOCfvNwYg/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'i7kh8pNRWOo',
     youtubePlaylistId: '',
     title: 'Jonathan Blow',
@@ -230,7 +230,7 @@ export const inspiration = [
     category: 'Gaming / Programming'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-w_eEd8wDZJk/AAAAAAAAAAI/AAAAAAAAAAA/QyYOddfPaU8/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'zm9bqSSiIdo',
     youtubePlaylistId: 'PL7wAPgl1JVvUEb0dIygHzO4698tmcwLk9',
     title: 'Coding Math',
@@ -238,7 +238,7 @@ export const inspiration = [
     category: 'Math / Programming'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-ohq6q05ayWU/AAAAAAAAAAI/AAAAAAAAAAA/atmEqN31z18/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'aNR4n0i2ZlM',
     youtubePlaylistId: '',
     title: 'Inigo Quilez',
@@ -246,7 +246,7 @@ export const inspiration = [
     category: 'Graphics Programming'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-6iv1rBCAwH0/AAAAAAAAAAI/AAAAAAAAAAA/PSODd9nHt60/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: '4niz8TfY794',
     youtubePlaylistId: '',
     title: 'Vihart',
@@ -254,7 +254,7 @@ export const inspiration = [
     category: 'Math & Music Theory'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-IiA18mytTCI/AAAAAAAAAAI/AAAAAAAAAAA/_Twi3leBUrU/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'Xgjb8spwew',
     youtubePlaylistId: '',
     title: 'Elliott Hulse',
@@ -262,7 +262,7 @@ export const inspiration = [
     category: 'Motivation & Health'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-ezhx3pwSklU/AAAAAAAAAAI/AAAAAAAAAAA/8geL4yr-W3g/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'N_UQx8dPPkc',
     youtubePlaylistId: 'PLW2eQOsUPlWJRfWGOi9gZdc3rE4Fke0Wv',
     title: 'Todd Motto',
@@ -270,7 +270,7 @@ export const inspiration = [
     category: 'Programming'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-b3a2Rs13Wh0/AAAAAAAAAAI/AAAAAAAAAAA/laq_oCKec1Y/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'ferZnZ0_rSM',
     youtubePlaylistId: '',
     title: 'NPR Music',
@@ -278,7 +278,7 @@ export const inspiration = [
     category: 'Music'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/-5ny40r8qe90/AAAAAAAAAAI/AAAAAAAAAAA/IrloZ_OeiYc/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'BMUiFMZr7vk',
     youtubePlaylistId: 'PL0zVEGEvSaeEd9hlmCXrk5yUyqUag',
     title: 'Fun Fun Function',
@@ -286,7 +286,7 @@ export const inspiration = [
     category: 'Programming'
   },
   {
-    poster: 'https://www.punknews.org/images/frontpage/fp-1350652743.jpg',
+    poster: 'https://yt3.ggpht.com/--Oq7OaQQnIo/AAAAAAAAAAI/AAAAAAAAAAA/nIJsg_cy0J4/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
     youtubeId: 'JB3v3bDba5g',
     youtubePlaylistId: 'PLghL9V9QTN0iqtOA5eFJWqfU5pymY',
     title: 'Wisecrack',

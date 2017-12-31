@@ -1,20 +1,16 @@
-@import '../../../../assets/css/mixins';
-@import '../../../../assets/css/variables';
-
-ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-}
+@import '../../../../../assets/css/mixins';
+@import '../../../../../assets/css/variables';
 
 li {
   padding: ms(0) 0 0 0;
+  position: absolute;
   cursor: pointer;
 
   &:hover img {
     opacity: .9;
   }
 }
+
 
 .left {
   width: percentage(1/5);
@@ -30,10 +26,6 @@ li {
 .right {
   display: inline-block;
   padding-left: ms(0);
-}
-
-h5 {
-  padding: 0
 }
 
 .title {
