@@ -39,13 +39,8 @@ export class CarouselItemComponent {
 
   @HostListener('click')
   public updateYtId(): void {
-    const ud = {
-      id: 'active_video',
-      changes: {
-        ytId: this.data.youtubeId,
-      },
-    };
 
-    this.store.dispatch(new Update(ud.changes));
+
+    this.store.dispatch(new Update({ytId: this.data.youtubeId}));
   }
 }

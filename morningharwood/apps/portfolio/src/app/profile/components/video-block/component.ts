@@ -63,7 +63,7 @@ export class VideoBlockComponent implements OnInit, OnDestroy, OnChanges{
 
   public close(): void {
     this.player.stopVideo().then(() => {
-      this.store.dispatch(new Update(''));
+      this.store.dispatch(new Update({ytId: ''}));
     });
   }
 }

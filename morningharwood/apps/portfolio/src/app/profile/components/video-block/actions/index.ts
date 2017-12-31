@@ -11,9 +11,7 @@ export const UPDATE  = '[VideoBlock] Update';
 
 export class Update implements Action {
   public readonly type = UPDATE;
-  constructor(
-      public ytId: string,
-  ) { }
+  constructor(public payload: {ytId: string}) { }
 }
 export type Types = Update;
 
@@ -21,7 +19,7 @@ export type Types = Update;
 export function videoReducer(state: any, action: Types) {
   switch (action.type) {
     case UPDATE:
-      return { state, ...action.ytId};
+      return { state, ...action.payload};
     default:
       return state;
   }
