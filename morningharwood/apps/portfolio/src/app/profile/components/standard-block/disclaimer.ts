@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'mh-disclaimer',
   template: '<p [innerHTML]="where"></p>',
-  styleUrls: ['../containers/resume/component.scss'],
+  styleUrls: ['./component.scss'],
 })
 export class DisclaimerComponent implements OnInit {
 

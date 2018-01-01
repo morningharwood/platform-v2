@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'mh-standard-block',
@@ -9,8 +10,6 @@ export class StandardBlockComponent implements OnInit {
   @Input() public title: string;
   @Input() public data: any;
 
-  constructor() {
-  }
 
   ngOnInit() {
 

@@ -3,7 +3,7 @@ import * as YouTubePlayer from 'youtube-player';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import {get} from 'lodash';
 import { Store } from '@ngrx/store';
-import { Update } from './actions/index';
+import { Clear, Update } from './actions/index';
 
 const ID = 'mh-yt-videoframe';
 
@@ -28,17 +28,15 @@ const ID = 'mh-yt-videoframe';
   ],
 })
 export class VideoBlockComponent implements OnInit, OnDestroy, OnChanges{
-  @Input() public title: string;
-  @Input() public ytId: any;
   @Input() public data: any;
-
+  public title: string;
   public player: any;
 
   constructor(private store:Store<any>) {}
 
   @HostBinding('@popOverState')
   public get stateName(): string {
-    const hasId = get(this.ytId, 'ytId', '');
+    const hasId = get(this.data, 'data.youtubeId', '');
     return hasId ? 'show': 'hide';
   }
 
@@ -50,9 +48,9 @@ export class VideoBlockComponent implements OnInit, OnDestroy, OnChanges{
   }
 
   public ngOnChanges() {
-    console.log('change');
-    if (this.ytId) {
-      this.player.loadVideoById(this.ytId.ytId);
+    this.title = get(this.data, 'data.title', '');
+    if (get(this.data, 'data.youtubeId', '')) {
+      this.player.loadVideoById(this.data.data.youtubeId);
       this.player.playVideo();
     }
   }
@@ -63,7 +61,7 @@ export class VideoBlockComponent implements OnInit, OnDestroy, OnChanges{
 
   public close(): void {
     this.player.stopVideo().then(() => {
-      this.store.dispatch(new Update({ytId: ''}));
+      this.store.dispatch(new Clear());
     });
   }
 }

@@ -18,6 +18,7 @@ export class ResumeContainerComponent {
   public awards: any = content.awards;
   public techniques: string[] = content.techniques;
   public socials = content.socials;
+  public visited = content.visited;
   public interests: string[] = content.interests;
   public inspiration = content.inspiration;
   public inspirationPodCast = content.inspirationPodCast;

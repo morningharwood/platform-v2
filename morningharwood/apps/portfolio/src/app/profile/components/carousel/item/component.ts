@@ -41,6 +41,6 @@ export class CarouselItemComponent {
   public updateYtId(): void {
 
 
-    this.store.dispatch(new Update({ytId: this.data.youtubeId}));
+    this.store.dispatch(new Update({data: this.data}));
   }
 }

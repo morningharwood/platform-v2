@@ -1,4 +1,15 @@
-<h1>Profile</h1>
+<section class="main">
 
-<button (click)="go('menu')">Menu</button>
-<button (click)="go('/profile/resume')">Go</button>
+<header class="header">
+  <h2>{{me.name}}</h2>
+  <h3>{{me.title}}</h3>
+  <p>{{me.description}}</p>
+</header>
+<div class="portrait">
+  <img src="./assets/images/me4-sq.jpg" alt="">
+</div>
+</section>
+<router-outlet></router-outlet>
+<mh-video-block
+    [data]="selectedVideoObs | async">
+</mh-video-block>

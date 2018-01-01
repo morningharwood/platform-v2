@@ -112,7 +112,8 @@ export const awards = [
     dateRange: '2017',
     title: 'BotBot',
     jobDescription: 'Voice Actor & Hand Model.',
-    url: 'https://www.rga.com/work/case-studies/botbot'
+    url: 'https://www.rga.com/work/case-studies/botbot',
+    youtubeId: 'bR85Ob1Yipo'
   }
 ];
 
@@ -146,6 +147,13 @@ export const techniques = [
   'i18n',
   'a11y',
   'and web workflow',
+];
+
+export const visited = [
+  {flag: '🇮🇹', countryName: 'Italy'},
+  {flag: '🇰🇷', countryName: 'Korea'},
+  {flag: '🇲🇽', countryName: 'Mexico'},
+  {flag: '🇨🇦', countryName: 'Canada'},
 ];
 
 export const inspiration = [

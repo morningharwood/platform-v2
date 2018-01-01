@@ -20,6 +20,20 @@
 }
 
 
+%standard-size {
+  font-family: $sans-default-family;
+  font-size: ms(0);
+  line-height: ms(1);
+}
+
+p {
+  @extend %standard-size;
+
+  @include bp(4) {
+    font-size: ms(-1);
+  }
+}
+
 .p-b-1 {
   padding-bottom: ms(0);
 }

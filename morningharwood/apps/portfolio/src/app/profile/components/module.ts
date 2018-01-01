@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { StandardBlockComponent } from './standard-block/component';
-import { DisclaimerComponent } from './disclaimer';
+import { DisclaimerComponent } from './standard-block/disclaimer';
 import { CommonModule } from '@angular/common';
 import { StandardListComponent } from './standard-list/component';
 import { StandardTableComponent } from './standard-table/component';
@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VideoBlockComponent } from './video-block/component';
 import { StoreModule } from '@ngrx/store';
 import { videoReducer } from './video-block/actions/index';
+import { TitleComponent } from './standard-block/title';
+import { VisitedListComponent } from './visited-list/component';
 
 export const DECLARE_EXPORT = [
   StandardBlockComponent,
@@ -21,7 +23,9 @@ export const DECLARE_EXPORT = [
   StandardRichComponent,
   CarouselListComponent,
   CarouselItemComponent,
-  VideoBlockComponent
+  VideoBlockComponent,
+  TitleComponent,
+  VisitedListComponent
 ];
 
 @NgModule({

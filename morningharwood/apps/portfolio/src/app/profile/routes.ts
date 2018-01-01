@@ -7,14 +7,20 @@ export const config: Routes = [
   {
     path: 'profile',
     children: [
-      // {
-      //   path: '',
-      //   component: MasterProfileContainerComponent,
-      // },
       {
         path: '',
-        component: ResumeContainerComponent,
+        component: MasterProfileContainerComponent,
+        children: [
+          {
+            path: 'resume',
+            component: ResumeContainerComponent,
+          }
+        ]
       },
+      // {
+      //   path: 'resume',
+      //   component: ResumeContainerComponent,
+      // },
     ],
   },
 ];

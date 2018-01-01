@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'mh-standard-list',
+  selector: 'mh-visited-list',
   templateUrl: './component.html',
   styleUrls: ['../shared-styles.scss', './component.scss'],
 })
-export class StandardListComponent {
+export class VisitedListComponent {
   @Input() public title: string;
   @Input() public data: any;
 }

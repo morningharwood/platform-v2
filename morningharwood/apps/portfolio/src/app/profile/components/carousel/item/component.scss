@@ -12,19 +12,20 @@ li {
 
 
 .left {
-  width: percentage(1/5);
-  display: inline-block;
+  display: block;
+  float: left;
+}
 
-  img {
-    opacity: .75;
-    border-radius: 100px;
-    width: 100%;
-  }
+img {
+  opacity: .75;
+  border-radius: 100px;
+  width: 75px;
 }
 
 .right {
-  display: inline-block;
   padding-left: ms(0);
+  display: block;
+  float: left;
 }
 
 .title {

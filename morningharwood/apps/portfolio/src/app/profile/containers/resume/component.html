@@ -1,8 +1,6 @@
 
 <header class="header">
-  <h2>{{me.name}}</h2>
-  <h3>{{me.title}}</h3>
-  <p>{{me.description}}</p>
+  <h2>Résumé</h2>
 </header>
 <section class="contact">
   <ul>
@@ -13,8 +11,7 @@
     </li>
     <li>
       <a href="mailto:{{me.email}}?subject=Hello Matthew">
-        {{me.email}}
-      2</a>
+        {{me.email}}</a>
     </li>
     <li>
       <a href="tel:{{me.phone}}">
@@ -59,19 +56,20 @@
 
   <mh-carousel-list
       [data]="inspiration"
-      [title]="'Inspiration'">
+      [title]="'Watching'">
   </mh-carousel-list>
 
   <mh-carousel-list
+      [title]="'Listening'"
       [data]="inspirationPodCast"
       [delay]="2750">
   </mh-carousel-list>
 
-  <mh-video-block [ytId]="selectedVideoObs | async">
-
-  </mh-video-block>
+  <mh-visited-list
+      [data]="visited"
+      [title]="'Recently Visited'">
+  </mh-visited-list>
 </aside>
-
 
 <div style="position:fixed; top:0; display: none;">
   <button (click)="go('menu')">Menu</button>

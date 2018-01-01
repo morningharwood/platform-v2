@@ -4,5 +4,5 @@
 
 export interface Item {
   name: string;
-  link: string;
+  link: string| string[];
 }
