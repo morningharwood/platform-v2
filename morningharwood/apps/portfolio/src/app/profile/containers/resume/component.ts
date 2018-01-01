@@ -6,6 +6,7 @@ import * as content from './content/data';
 import { selectFeature } from '../../components/video-block/actions/index';
 import { Observable } from 'rxjs/Observable';
 
+
 @Component({
   selector: 'mh-resume-profile',
   templateUrl: './component.html',
@@ -22,13 +23,16 @@ export class ResumeContainerComponent {
   public interests: string[] = content.interests;
   public inspiration = content.inspiration;
   public inspirationPodCast = content.inspirationPodCast;
+  public testimonials = content.testimonials;
   public selectedVideoObs: Observable<any>;
 
   constructor(private store: Store<any>) {
     this.selectedVideoObs = store.select(selectFeature);
-    this.selectedVideoObs.subscribe(console.log);
   }
 
+  public scroll() {
+    window.scrollTo(0, window.innerHeight);
+  }
   public back() {
     this.store.dispatch(new RouterActions.Back());
   }

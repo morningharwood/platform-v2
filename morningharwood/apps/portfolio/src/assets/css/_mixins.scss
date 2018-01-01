@@ -8,6 +8,11 @@
 @import './mixins/breakpoint';
 @import './mixins/responsive-text';
 
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
 
 @mixin accessible-hide() {
   left: -9999px !important;

@@ -14,6 +14,7 @@ import { StoreModule } from '@ngrx/store';
 import { videoReducer } from './video-block/actions/index';
 import { TitleComponent } from './standard-block/title';
 import { VisitedListComponent } from './visited-list/component';
+import { MhPipesModule } from '../../pipe/module';
 
 export const DECLARE_EXPORT = [
   StandardBlockComponent,
@@ -33,6 +34,7 @@ export const DECLARE_EXPORT = [
   exports: [...DECLARE_EXPORT],
   imports: [
       CommonModule,
+      MhPipesModule,
       BrowserAnimationsModule,
       StoreModule.forFeature('profile', videoReducer),
   ],

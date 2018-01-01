@@ -106,6 +106,15 @@ export const educations: ResumeBlock[] = [
   },
 ];
 
+export const testimonials: ResumeBlock[] = [
+  {
+    place: 'Paulo Melchiori',
+    dateRange: 'July 15 2017',
+    title: 'SVP Executive Creative Director at R/GA',
+    jobDescription: 'Matt is arguably one of the best hand models in the world. I had the opportunity to see Matt\'s hands in action once, and I\'ll never forget that experience. Seeing those baby fingers working that phone screen for the first time was like seeing the touch of god happening before my eyes. Some have compared his hands to the ones painted by Michelangelo on the fresco "The Creation of Adam" or the hands of Mother Mary in the sculpture "Pietá". Speculations aside, the fact is that those hands can absolutely do miracles to your product.',
+  },
+];
+
 export const awards = [
   {
     place: 'R/GA',
@@ -130,7 +139,7 @@ export const interests = [
   'Motion Design',
   'Architecture',
   'Skateboarding',
-  'and Guitar',
+  'Guitar',
 ];
 
 export const techniques = [
@@ -139,14 +148,14 @@ export const techniques = [
   'AWS',
   'CSS/SCSS',
   'Vector/DOM',
-  'motion graphics',
-  'semantic HTML',
+  'Motion Graphics',
+  'Semantic HTML',
   'Typescript',
   'NodeJS',
   'Golang',
   'i18n',
   'a11y',
-  'and web workflow',
+  'Web Workflow',
 ];
 
 export const visited = [

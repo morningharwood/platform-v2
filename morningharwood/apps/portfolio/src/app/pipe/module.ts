@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { SupSubPipe } from './sup_sub';
+import { CommaToAndPipe } from './comma';
 
 
-
-const DECLARE_EXPORT = [SupSubPipe];
+const DECLARE_EXPORT = [
+  SupSubPipe,
+  CommaToAndPipe,
+];
 
 @NgModule({
   imports: [],
