@@ -2,11 +2,31 @@ import { ResumeBlock } from '../interfaces/index';
 
 // TODO make this in fb.
 export const socials = [
-  {place: 'Github', url: 'https://github.com/matthewharwood', text: 'matthewharwood'},
-  {place: 'Linkedin', url: 'https://www.linkedin.com/in/morningharwood/', text: 'morningharwood'},
-  {place: 'Facebook', url: 'https://www.facebook.com/Watashi', text: 'watashi'},
-  {place: 'Twitter', url: 'https://twitter.com/Matty0187', text: 'matty0187'},
-  {place: 'Google+', url: 'https://plus.google.com/u/1/+MatthewHarwood', text: 'matthewharwood'},
+  {
+    place: 'Github',
+    url: 'https://github.com/matthewharwood',
+    text: 'matthewharwood',
+  },
+  {
+    place: 'Linkedin',
+    url: 'https://www.linkedin.com/in/morningharwood/',
+    text: 'morningharwood',
+  },
+  {
+    place: 'Facebook',
+    url: 'https://www.facebook.com/Watashi',
+    text: 'watashi',
+  },
+  {
+    place: 'Twitter',
+    url: 'https://twitter.com/Matty0187',
+    text: 'matty0187',
+  },
+  {
+    place: 'Google+',
+    url: 'https://plus.google.com/u/1/+MatthewHarwood',
+    text: 'matthewharwood',
+  },
   {
     place: 'Ethereum Wallet',
     url: 'https://etherscan.io/address/0xb3d9dec692031257044a6f366ff4144997bb9205',
@@ -21,7 +41,7 @@ export const me = {
   phone: '1.415.486.6018',
   email: 'info@morningharwood.com',
   domain: 'www.morningharwood.com',
-  fullDomain: 'https://www.morningharwood.com'
+  fullDomain: 'https://www.morningharwood.com',
 };
 
 export const experiences: ResumeBlock[] = [
@@ -122,8 +142,8 @@ export const awards = [
     title: 'BotBot',
     jobDescription: 'Voice Actor & Hand Model.',
     url: 'https://www.rga.com/work/case-studies/botbot',
-    youtubeId: 'bR85Ob1Yipo'
-  }
+    youtubeId: 'bR85Ob1Yipo',
+  },
 ];
 
 export const interests = [
@@ -159,10 +179,22 @@ export const techniques = [
 ];
 
 export const visited = [
-  {flag: '🇮🇹', countryName: 'Italy'},
-  {flag: '🇰🇷', countryName: 'Korea'},
-  {flag: '🇲🇽', countryName: 'Mexico'},
-  {flag: '🇨🇦', countryName: 'Canada'},
+  {
+    flag: '🇮🇹',
+    countryName: 'Italy',
+  },
+  {
+    flag: '🇰🇷',
+    countryName: 'Korea',
+  },
+  {
+    flag: '🇲🇽',
+    countryName: 'Mexico',
+  },
+  {
+    flag: '🇨🇦',
+    countryName: 'Canada',
+  },
 ];
 
 export const inspiration = [
@@ -172,7 +204,7 @@ export const inspiration = [
     youtubePlaylistId: 'PLF7eeGkHcenS75D3X73YfcSAQ1QPKxUxf',
     title: 'Shots of Awe',
     personName: 'Jason Silva',
-    category: 'Philosophy'
+    category: 'Philosophy',
   },
   {
     poster: 'https://yt3.ggpht.com/-0YGU25OjtDM/AAAAAAAAAAI/AAAAAAAAAAA/Vhjw8Wwnu2w/s288-c-k-no-mo-rj-c0xffffff/photo.jpgg',
@@ -180,7 +212,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'Vsauce',
     personName: 'Michael Stevens',
-    category: 'Science'
+    category: 'Science',
   },
   {
     poster: 'https://yt3.ggpht.com/-E4PnJqf7rW4/AAAAAAAAAAI/AAAAAAAAAAA/s0z3U8hFTUk/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -188,7 +220,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'Peer Eriksson',
     personName: 'Various Artists',
-    category: 'Culture'
+    category: 'Culture',
   },
   {
     poster: 'https://yt3.ggpht.com/-ftMaOzF43WA/AAAAAAAAAAI/AAAAAAAAAAA/rks3UOR9mGc/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -196,7 +228,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'VideogameDunkey',
     personName: 'Jason Gastrow',
-    category: 'Video Games'
+    category: 'Video Games',
   },
   {
     poster: 'https://yt3.ggpht.com/-LzrgDO3iEdc/AAAAAAAAAAI/AAAAAAAAAAA/qh-jOfZDCg8/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -204,7 +236,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'The Needle Drop',
     personName: 'Anthony Fantano',
-    category: 'Music Reviews'
+    category: 'Music Reviews',
   },
   {
     poster: 'https://yt3.ggpht.com/-E8L7xuAeZsQ/AAAAAAAAAAI/AAAAAAAAAAA/QhfJWELDd5M/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -212,7 +244,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'This Exists',
     personName: 'Sam Sutherland',
-    category: 'Culture'
+    category: 'Culture',
   },
   {
     poster: 'https://yt3.ggpht.com/-APmV4EfvBLI/AAAAAAAAAAI/AAAAAAAAAAA/mRFDuaT-W_o/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -220,7 +252,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'Nowness',
     personName: 'Various Artists',
-    category: 'Culture'
+    category: 'Culture',
   },
   {
     poster: 'https://yt3.ggpht.com/-SuohYAOTZvs/AAAAAAAAAAI/AAAAAAAAAAA/JHg2bUQ0Gjc/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -228,7 +260,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'Vice',
     personName: 'Various Artists',
-    category: 'News / Documentary'
+    category: 'News / Documentary',
   },
   {
     poster: 'https://yt3.ggpht.com/-moy7q66uDVs/AAAAAAAAAAI/AAAAAAAAAAA/3kiAD7O0Q_E/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -236,7 +268,7 @@ export const inspiration = [
     youtubePlaylistId: 'PLJ8cMiYb3G5fyqfIwGjH2fYC5fFLfdwW4',
     title: 'Vox - Earworm',
     personName: 'Various Artists',
-    category: 'Music History'
+    category: 'Music History',
   },
   {
     poster: 'https://yt3.ggpht.com/-YG5j1CtAsyo/AAAAAAAAAAI/AAAAAAAAAAA/GJnOCfvNwYg/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -244,7 +276,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'Jonathan Blow',
     personName: 'Jonathan Blow',
-    category: 'Gaming / Programming'
+    category: 'Gaming / Programming',
   },
   {
     poster: 'https://yt3.ggpht.com/-w_eEd8wDZJk/AAAAAAAAAAI/AAAAAAAAAAA/QyYOddfPaU8/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -252,7 +284,7 @@ export const inspiration = [
     youtubePlaylistId: 'PL7wAPgl1JVvUEb0dIygHzO4698tmcwLk9',
     title: 'Coding Math',
     personName: 'Keith Peterson',
-    category: 'Math / Programming'
+    category: 'Math / Programming',
   },
   {
     poster: 'https://yt3.ggpht.com/-ohq6q05ayWU/AAAAAAAAAAI/AAAAAAAAAAA/atmEqN31z18/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -260,7 +292,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'Inigo Quilez',
     personName: 'Inigo Quilez',
-    category: 'Graphics Programming'
+    category: 'Graphics Programming',
   },
   {
     poster: 'https://yt3.ggpht.com/-6iv1rBCAwH0/AAAAAAAAAAI/AAAAAAAAAAA/PSODd9nHt60/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -268,7 +300,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'Vihart',
     personName: 'Victoria Hart',
-    category: 'Math & Music Theory'
+    category: 'Math & Music Theory',
   },
   {
     poster: 'https://yt3.ggpht.com/-IiA18mytTCI/AAAAAAAAAAI/AAAAAAAAAAA/_Twi3leBUrU/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -276,7 +308,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'Elliott Hulse',
     personName: 'Elliott Hulse',
-    category: 'Motivation & Health'
+    category: 'Motivation & Health',
   },
   {
     poster: 'https://yt3.ggpht.com/-ezhx3pwSklU/AAAAAAAAAAI/AAAAAAAAAAA/8geL4yr-W3g/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -284,7 +316,7 @@ export const inspiration = [
     youtubePlaylistId: 'PLW2eQOsUPlWJRfWGOi9gZdc3rE4Fke0Wv',
     title: 'Todd Motto',
     personName: 'Todd Motto',
-    category: 'Programming'
+    category: 'Programming',
   },
   {
     poster: 'https://yt3.ggpht.com/-b3a2Rs13Wh0/AAAAAAAAAAI/AAAAAAAAAAA/laq_oCKec1Y/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -292,7 +324,7 @@ export const inspiration = [
     youtubePlaylistId: '',
     title: 'NPR Music',
     personName: 'Various Artists',
-    category: 'Music'
+    category: 'Music',
   },
   {
     poster: 'https://yt3.ggpht.com/-5ny40r8qe90/AAAAAAAAAAI/AAAAAAAAAAA/IrloZ_OeiYc/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -300,7 +332,7 @@ export const inspiration = [
     youtubePlaylistId: 'PL0zVEGEvSaeEd9hlmCXrk5yUyqUag',
     title: 'Fun Fun Function',
     personName: 'Mattias Petter Johansson',
-    category: 'Programming'
+    category: 'Programming',
   },
   {
     poster: 'https://yt3.ggpht.com/--Oq7OaQQnIo/AAAAAAAAAAI/AAAAAAAAAAA/nIJsg_cy0J4/s288-c-k-no-mo-rj-c0xffffff/photo.jpg',
@@ -308,8 +340,8 @@ export const inspiration = [
     youtubePlaylistId: 'PLghL9V9QTN0iqtOA5eFJWqfU5pymY',
     title: 'Wisecrack',
     personName: 'Various Artists',
-    category: 'Philosophy'
-  }
+    category: 'Philosophy',
+  },
 ];
 
 export const inspirationPodCast = [
@@ -319,7 +351,7 @@ export const inspirationPodCast = [
     youtubePlaylistId: 'PLJesql-aSfX6PKiA6XAjzbUCWiYCUkU2q',
     title: 'Adventures In Angular',
     personName: 'Charles Max Wood',
-    category: 'Angular Programming'
+    category: 'Angular Programming',
   },
   {
     poster: 'https://lh3.googleusercontent.com/CYxJarotC730qwLdWg4K-cRcXgDhBGALxkHmEGz0mbdz9Ki2JozygkWLKy8B3A=s360-c-e100-rwu-v1',
@@ -327,7 +359,7 @@ export const inspirationPodCast = [
     youtubePlaylistId: 'PLDtc_uppNe1oyTZ6HQc3jEU1Q0WRpTWGF',
     title: 'Waking up with Sam Harris',
     personName: 'Sam Harris',
-    category: 'Philosophy / News / Science'
+    category: 'Philosophy / News / Science',
   },
   {
     poster: 'https://lh3.googleusercontent.com/5r3kj1AQJ8u0liWlN3L3WXhqoHzlxj21PeIsA1OHErPYfET7n3XymxVinSY=s360-c-e100-rwu-v1',
@@ -335,7 +367,7 @@ export const inspirationPodCast = [
     youtubePlaylistId: 'PLk1Sqn_f33KuS7ZSVMJqzFaqOyyl-esmG',
     title: 'The Joe Rogan Experience',
     personName: 'Joe Rogan',
-    category: 'Various Topics'
+    category: 'Various Topics',
   },
   {
     poster: 'https://lh3.googleusercontent.com/g7kf9vjhnFRXqp1pAxSH8V_787wS4xPlDlJ1UmcW95-FU8h8h06yuiq2JT11Ng=s360-c-e100-rwu-v1',
@@ -344,7 +376,7 @@ export const inspirationPodCast = [
     outLink: 'https://play.google.com/music/m/Ipbuascuv6vbya2vic4ln5lbvti?t=LambdaCast',
     title: 'Lambda Cast',
     personName: '',
-    category: 'Functional Programming'
+    category: 'Functional Programming',
   },
   {
     poster: 'https://lh3.googleusercontent.com/NXcVZtMZpgHdoaDuZkfGHcH4zO-R52z4MKu1nlGb85AaHeYUNv1I0XhNwQcp=s360-c-e100-rwu-v1',
@@ -353,7 +385,7 @@ export const inspirationPodCast = [
     outLink: 'https://play.google.com/music/m/Irhlugse7hhe7scqjp7x22ke73q?t=Voices_of_VR_Podcast__Designing_for_Virtual_Reality',
     title: 'Voices of VR',
     personName: 'Kent By',
-    category: 'VR & AR'
+    category: 'VR & AR',
   },
   {
     poster: 'https://lh3.googleusercontent.com/7eTHUC9vDIUZKQlr5xcr0tlHK0EMQ74pSvXYzVKpk8qIhVdk_QsfjtvUZVLC=s360-c-e100-rwu-v1',
@@ -362,7 +394,7 @@ export const inspirationPodCast = [
     outLink: 'https://play.google.com/music/m/Iwd6tw2ry437rn76v5geoi6ogxq?t=Functional_Geekery',
     title: 'Functional Geekery',
     personName: '',
-    category: 'Functional Programming'
+    category: 'Functional Programming',
   },
   {
     poster: 'https://lh3.googleusercontent.com/PeaLTKKucRs3UJo0QUW8ytKYHJJ9xbkRRiFdDAVJHMg-sFbMGfl1tNr5LlBm=s360-c-e100-rwu-v1',
@@ -371,7 +403,7 @@ export const inspirationPodCast = [
     outLink: 'https://play.google.com/music/m/Iymp2oheqqsejlysa2gvtmnwryu?t=Breaking_Math_Podcast',
     title: 'Breaking Math',
     personName: '',
-    category: 'Math'
+    category: 'Math',
   },
   {
     poster: 'https://lh3.googleusercontent.com/KDFZd4NfA8On8jhhLkKySP-yAOAZXb7lvcOpLDhSBElES8vatElt55Zuein-=s360-c-e100-rwu-v1',
@@ -380,7 +412,7 @@ export const inspirationPodCast = [
     outLink: 'https://play.google.com/music/m/Iytzq4vxrqmr6ed6tnxrfchvcoi?t=All_JavaScript_Podcasts_by_Devchattv',
     title: 'All JavaScript Podcast',
     personName: 'Charles Max Wood',
-    category: 'Javascript Programming'
+    category: 'Javascript Programming',
   },
 
 ];
