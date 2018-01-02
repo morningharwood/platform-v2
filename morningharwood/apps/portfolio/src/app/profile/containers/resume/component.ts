@@ -25,14 +25,12 @@ export class ResumeContainerComponent {
   public inspirationPodCast = content.inspirationPodCast;
   public testimonials = content.testimonials;
   public selectedVideoObs: Observable<any>;
+  public header = 'Résumé';
 
   constructor(private store: Store<any>) {
     this.selectedVideoObs = store.select(selectFeature);
   }
 
-  public scroll() {
-    window.scrollTo(0, window.innerHeight);
-  }
   public back() {
     this.store.dispatch(new RouterActions.Back());
   }

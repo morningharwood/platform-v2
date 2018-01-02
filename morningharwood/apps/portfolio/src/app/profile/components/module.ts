@@ -15,6 +15,7 @@ import { videoReducer } from './video-block/actions/index';
 import { TitleComponent } from './standard-block/title';
 import { VisitedListComponent } from './visited-list/component';
 import { MhPipesModule } from '../../pipe/module';
+import { FabButtonComponent } from './fab-button/component';
 
 export const DECLARE_EXPORT = [
   StandardBlockComponent,
@@ -26,7 +27,8 @@ export const DECLARE_EXPORT = [
   CarouselItemComponent,
   VideoBlockComponent,
   TitleComponent,
-  VisitedListComponent
+  VisitedListComponent,
+  FabButtonComponent,
 ];
 
 @NgModule({

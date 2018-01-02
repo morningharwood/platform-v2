@@ -1,9 +1,7 @@
 @import '../../../../assets/css/mixins';
 @import '../../../../assets/css/variables';
 
-// Helpers
 
-$grid-padding: 1;
 
 // Elemental
 
@@ -17,6 +15,16 @@ ul {
   font-family: $sans-default-family;
   font-size: ms(0);
   line-height: ms(1);
+}
+
+%standard-space {
+  $grid-padding: 1;
+
+  @include space(p, 0 ms($grid-padding));
+
+  @include bp(4) {
+    @include space(p, ms($grid-padding));
+  }
 }
 
 p {
@@ -57,7 +65,12 @@ h3 {
 
 // Structural
 :host {
-  box-shadow: 0px -10px 25px rgba(255, 255, 255, .1);
+  @include space(p, ms(2) 0);
+  @include space(m, 0 auto ms(2));
+  @include size(percentage(1/1), null, null, percentage(1/1));
+  @include position(relative);
+
+  box-shadow: 0 -10px 25px rgba(255, 255, 255, .1);
   /* autoprefixer: off */
   display: grid;
   grid-auto-columns: auto;
@@ -65,54 +78,17 @@ h3 {
   grid-gap: ms(1);
   /* autoprefixer: off */
 
-  min-height: 100%;
-  padding: ms(2) 0;
-
-  width: 100%;
-  margin: 0 auto ms(2);
-  position: relative;
-
   @include bp(4) {
-    background-color: #f7f7f7;
+    @include size(percentage(9/10));
+    @include space(p, ms(4) ms(1) ms(4) ms(1));
+
+    background-color: $white-off;
     transform: translateY(90vh);
-    padding: ms(4) ms(1) ms(4) ms(1);
-    width: 90%;
-  }
-}
-
-.fab-action {
-  @include hide();
-  @include bp(4) {
-    $fab-size: 55;
-
-    @include show(block);
-
-    border: transparent;
-    background-color: $red-mh;
-    border-radius: em($fab-size);
-    position: absolute;
-    top:  em(-$fab-size/2);
-    left: em($fab-size);
-    width: em($fab-size);
-    height: em($fab-size);
-
-    &::before {
-      cursor: pointer;
-      content: '>';
-      position: absolute;
-      color: $white;
-      top: 24px;
-      left: 33px;
-      z-index: 10;
-      transform: rotate(90deg) scale(0.5, 1);
-      font-size: ms(0);
-      text-align: center;
-    }
   }
 }
 
 .header {
-  padding: 0 ms($grid-padding);
+  @extend %standard-space;
 
   @include bp(4) {
     /* autoprefixer: off */
@@ -120,70 +96,51 @@ h3 {
     grid-row: 1 / 2;
     /* autoprefixer: off */
 
-    padding: ms(1);
   }
 }
 
 .contact {
-  padding: 0 ms($grid-padding);
+  @extend %standard-space;
 
   @include bp(4) {
     /* autoprefixer: off */
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    /* autoprefixer: off */
-
-    padding: ms($grid-padding);
     text-align: right;
+    /* autoprefixer: off */
   }
 }
 
-.two-thirds-grid {
-  display: grid;
-  grid-auto-columns: auto;
-  grid-auto-rows: auto;
-  grid-gap: ms(1);
-  padding: 0 ms($grid-padding);
-
-  
-}
-
 .experience {
-  padding: 0 ms($grid-padding);
+  @extend %standard-space;
 
   @include bp(4) {
     /* autoprefixer: off */
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     /* autoprefixer: off */
-
-    padding: ms($grid-padding);
   }
 }
 
 .education {
-  padding: 0 ms($grid-padding);
+  @extend %standard-space;
 
   @include bp(4) {
     /* autoprefixer: off */
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     /* autoprefixer: off */
-
-    padding: ms($grid-padding);
   }
 }
 
 .aside {
-  padding: 0 ms($grid-padding);
+  @extend %standard-space;
 
   @include bp(4) {
     /* autoprefixer: off */
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     /* autoprefixer: off */
-
-    padding: ms($grid-padding);
   }
 }
 

@@ -1,0 +1,31 @@
+@import '../../../../assets/css/mixins';
+@import '../../../../assets/css/variables';
+
+
+button {
+  @include hide();
+  @include bp(4) {
+    $fab-size: 55;
+
+    @include position(absolute, em(-$fab-size/2), null, null, em($fab-size));
+    @include size(em($fab-size), em($fab-size));
+    @include show(block);
+
+    background-color: $red-mh;
+    border: transparent;
+    border-radius: em($fab-size);
+    padding: 0;
+  }
+}
+
+button::before {
+  @include bp(4) {
+    @include position(absolute, 24px, null, null, 33px, $tertiary);
+    color: $white;
+    content: '>';
+    cursor: pointer;
+    font-size: ms(0);
+    text-align: center;
+    transform: rotate(90deg) scale(0.5, 1);
+  }
+}
