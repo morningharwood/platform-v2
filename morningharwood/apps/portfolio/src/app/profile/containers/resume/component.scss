@@ -138,24 +138,14 @@ h3 {
   }
 }
 
-.testimonials {
+.two-thirds-grid {
   display: grid;
   grid-auto-columns: auto;
   grid-auto-rows: auto;
   grid-gap: ms(1);
   padding: 0 ms($grid-padding);
 
-  .wrapper {
-
-    @include bp(4) {
-      /* autoprefixer: off */
-      grid-column: 1 / 2;
-      grid-row: 2;
-      /* autoprefixer: off */
-
-      padding: ms($grid-padding);
-    }
-  }
+  
 }
 
 .experience {
