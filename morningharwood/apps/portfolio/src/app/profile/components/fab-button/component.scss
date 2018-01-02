@@ -1,12 +1,13 @@
 @import '../../../../assets/css/mixins';
+@import '../../../../assets/css/extends';
 @import '../../../../assets/css/variables';
 
 
 button {
+  @extend %reset-space;
   @include hide();
   @include bp(4) {
-    $fab-size: 55;
-
+    $fab-size: 42;
     @include position(absolute, em(-$fab-size/2), null, null, em($fab-size));
     @include size(em($fab-size), em($fab-size));
     @include show(block);
@@ -14,15 +15,15 @@ button {
     background-color: $red-mh;
     border: transparent;
     border-radius: em($fab-size);
-    padding: 0;
   }
 }
 
-button::before {
+button span {
   @include bp(4) {
-    @include position(absolute, 24px, null, null, 33px, $tertiary);
+    @include position(absolute, em(12), null, null, null, $tertiary);
+    @include space(m, 0 0 0 em(-3));
+
     color: $white;
-    content: '>';
     cursor: pointer;
     font-size: ms(0);
     text-align: center;
