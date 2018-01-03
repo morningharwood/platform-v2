@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./component.scss'],
 })
 export class HamburgerComponent implements OnInit {
-  private open = false;
+  public open = false;
 
   constructor(private store:Store<any>,
               private location: Location,
