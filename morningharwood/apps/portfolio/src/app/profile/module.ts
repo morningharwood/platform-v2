@@ -5,6 +5,7 @@ import * as profileRoutes from './routes';
 import { CommonModule } from '@angular/common';
 import { MhPipesModule } from '../pipe/module';
 import { ProfileComponentsModule } from './components/module';
+import { HamburgerModule } from '../hamburger/module';
 
 export const DECLARE_EXPORT = [
   ResumeContainerComponent,
@@ -18,7 +19,8 @@ export const DECLARE_EXPORT = [
     CommonModule,
     MhPipesModule,
     profileRoutes.routes,
-    ProfileComponentsModule
+    ProfileComponentsModule,
+    HamburgerModule,
   ],
 })
 export class ProfileModule {

@@ -15,7 +15,7 @@ import { materialDesignCurve } from '../../../../_animations/material-design';
 import * as RouterActions from "../../../../router/actions";
 import {Store} from "@ngrx/store";
 
-
+// TODO refactor to button and use HostListener
 @Component({
   selector: 'mh-nav-item',
   templateUrl: './item.component.html',

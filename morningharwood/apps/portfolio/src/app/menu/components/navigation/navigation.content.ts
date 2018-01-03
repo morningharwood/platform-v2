@@ -7,7 +7,7 @@ export interface Navigation extends Array<Item> {
 }
 
 export const data:Navigation = [
-  {name: 'work', link: '/work'},
-  {name: 'lab', link: '/lab'},
-  {name: 'profile', link: '/profile/resume'},
+  {name: 'work', link: 'work'},
+  {name: 'lab', link: 'lab'},
+  {name: 'profile', link: 'profile'},
 ];
