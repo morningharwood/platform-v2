@@ -1,18 +1,16 @@
 @import '../../assets/css/mixins';
 @import '../../assets/css/variables';
 
-/**
- *  https://codepen.io/husnimun/pen/pJvEeL?q=hamburger&limit=all&type=type-pens
- */
-$bar-width: ms(1);
+$bar-width: 100%;
 $bar-height: 3px;
 $bar-spacing: 6px;
 $bg-on: rgba(0, 0, 0, 1);
 $bg-off: rgba(0, 0, 0, 0);
 
 :host {
-  @include position(fixed, ms(0), null, null, ms(-1), $primary);
-  @include size($bar-width, $bar-height + $bar-spacing*2);
+  @include position(fixed, null, null, null, 0, $primary);
+  @include size(4.9%, $bar-height + $bar-spacing*2);
+  @include space(p, ms(0) ms(-1));
   cursor: pointer;
   margin: auto;
 }
@@ -23,15 +21,33 @@ $bg-off: rgba(0, 0, 0, 0);
   @include size($bar-width, $bar-height);
 }
 
+$offset-color: .35;
+
 .bar {
   background: $bg-on;
   position: relative;
   transform: translateY($bar-spacing);
-  transition: all 0ms 300ms;
 
   &.animate {
     background: $bg-off;
   }
+}
+
+
+:host:hover .bar {
+  background: transparentize($bg-on, $offset-color);
+}
+
+:host:hover .bar::after {
+  top: ms(-1);
+  transition: top 100ms ease-out;
+  background: transparentize($bg-on, $offset-color);
+}
+
+:host:hover .bar::before {
+  bottom: ms(-1);
+  transition: bottom 100ms ease-out;
+  background: transparentize($bg-on, $offset-color);
 }
 
 .bar::before {
@@ -40,8 +56,7 @@ $bg-off: rgba(0, 0, 0, 0);
   content: '';
   left: 0;
   position: absolute;
-  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-  transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 100ms ease-in;
 }
 
 .bar::after {
@@ -50,20 +65,7 @@ $bg-off: rgba(0, 0, 0, 0);
   left: 0;
   position: absolute;
   top: $bar-spacing;
-  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-  transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 100ms ease-in;
 }
 
-.bar.animate::after {
-  top: 0;
-  transform: rotate(45deg);
-  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
-  transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-}
 
-.bar.animate::before {
-  bottom: 0;
-  transform: rotate(-45deg);
-  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
-  transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-}

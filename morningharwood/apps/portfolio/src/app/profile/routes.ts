@@ -21,10 +21,10 @@ export const config: Routes = [
             component: ResumeContainerComponent,
             outlet: 'resume'
           },
-          {
-            path: 'menu',
-            component: MasterMenuContainerComponent,
-          }
+          // {
+          //   path: 'menu',
+          //   component: MasterMenuContainerComponent,
+          // }
         ]
       },
     ],

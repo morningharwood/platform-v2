@@ -1,11 +1,11 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Update } from '../video-block/actions/index';
+import { Update } from '../../video-block/actions/index';
 
 @Component({
   selector: 'mh-title',
-  template: '<p class="title">{{data.title}}<span *ngIf="this.data.youtubeId">🔺</span></p>',
-  styleUrls: ['./component.scss'],
+  templateUrl: './component.html',
+  styleUrls: ['../component.scss'],
 })
 export class TitleComponent implements OnInit {
 

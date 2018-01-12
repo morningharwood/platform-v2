@@ -12,7 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VideoBlockComponent } from './video-block/component';
 import { StoreModule } from '@ngrx/store';
 import { videoReducer } from './video-block/actions/index';
-import { TitleComponent } from './standard-block/title';
+import { TitleComponent } from './standard-block/title/component';
 import { VisitedListComponent } from './visited-list/component';
 import { MhPipesModule } from '../../pipe/module';
 import { FabButtonComponent } from './fab-button/component';

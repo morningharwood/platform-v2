@@ -1,8 +1,12 @@
-import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
+import {
+  Component, HostBinding, HostListener, OnChanges,
+  OnInit,
+} from '@angular/core';
 import { Location } from '@angular/common';
 import { Store } from '@ngrx/store';
 import * as RouterActions from '../router/actions';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'mh-hammy',
@@ -14,11 +18,15 @@ export class HamburgerComponent implements OnInit {
 
   constructor(private store:Store<any>,
               private location: Location,
-              private route:ActivatedRoute) {
+              private router: Router) {
   }
 
-  ngOnInit() {
-    this.open = this.location.path().includes('/menu');
+  public ngOnInit() {
+    this.router.events.pipe(
+      filter((event) => event instanceof NavigationEnd)
+    ).subscribe((event) => {
+      this.open = this.location.path().includes('/menu');
+    });
   }
 
 
@@ -28,7 +36,7 @@ export class HamburgerComponent implements OnInit {
     if(!this.open){
       this.store.dispatch(new RouterActions.Back());
     } else {
-      this.store.dispatch(new RouterActions.Go({path: ['profile/menu']}));
+      this.store.dispatch(new RouterActions.Go({path: ['menu']}));
     }
   }
 
